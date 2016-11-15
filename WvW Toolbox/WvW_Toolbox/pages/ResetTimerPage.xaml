@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WvW_Toolbox.pages.ResetTimerPage">
+  <StackLayout Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="Center">
+    <Label Text="Time until next reset:" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Gray" FontSize="20" />
+    <Label x:Name="timerText" Text="00d 00h 00m" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Red" FontSize="40" />
+    <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+      <Label x:Name="localeText" Text="North America" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Gray" FontSize="20" />
+      <Switch x:Name="localeSwitch" Toggled="localeSwitch_Toggled" />
+    </StackLayout>
+    <Button x:Name="reloadButton" Text="Reload" Clicked="reloadButton_Clicked" />
+  </StackLayout>
+</ContentPage>
