@@ -14,8 +14,26 @@ namespace WvW_Toolbox.pages
 
         public RankCalcPage()
         {
+            //Set up UI
             InitializeComponent();
             RankNameSection.IsVisible = false;
+
+            //Set up Picker content
+            string[] colours = new string[] { "(none)", "Bronze", "Silver", "Gold", "Platinum", "Mithril", "Diamond" };
+            string[] titles = new string[] { "Invader", "Assaulter", "Raider", "Recruit", "Scout", "Soldier", "Squire", "Footman", "Knight", "Major", "Colonel", "General", "Veteran", "Champion", "Legend" };
+
+            foreach (string s in colours)
+            {
+                RankNameSearchColour.Items.Add(s);
+            }
+            RankNameSearchColour.SelectedIndex = 0;
+
+            foreach (string s in titles)
+            {
+                RankNameSearchTitle.Items.Add(s);
+            }
+            RankNameSearchTitle.SelectedIndex = 0;
+
         }
 
         private void RankNumberButton_Clicked(object sender, EventArgs e)
