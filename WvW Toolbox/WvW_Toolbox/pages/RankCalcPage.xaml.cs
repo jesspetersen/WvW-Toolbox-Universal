@@ -11,6 +11,8 @@ namespace WvW_Toolbox.pages
     public partial class RankCalcPage : ContentPage
     {
         //REMEMBER IF STATEMENT TO PREVENT LETTER VALUES GETTING THROUGH TO RANKNUMBERSEARCHHELPER
+        string[] colours = new string[] { "(none)", "Bronze", "Silver", "Gold", "Platinum", "Mithril", "Diamond" };
+        string[] titles = new string[] { "Invader", "Assaulter", "Raider", "Recruit", "Scout", "Soldier", "Squire", "Footman", "Knight", "Major", "Colonel", "General", "Veteran", "Champion", "Legend" };
 
         public RankCalcPage()
         {
@@ -19,8 +21,6 @@ namespace WvW_Toolbox.pages
             RankNameSection.IsVisible = false;
 
             //Set up Picker content
-            string[] colours = new string[] { "(none)", "Bronze", "Silver", "Gold", "Platinum", "Mithril", "Diamond" };
-            string[] titles = new string[] { "Invader", "Assaulter", "Raider", "Recruit", "Scout", "Soldier", "Squire", "Footman", "Knight", "Major", "Colonel", "General", "Veteran", "Champion", "Legend" };
 
             foreach (string s in colours)
             {
@@ -79,6 +79,15 @@ namespace WvW_Toolbox.pages
             {
                 DisplayAlert("Problem!", "Please enter a valid rank number", "OK");
             }
+        }
+
+        private void RankNameSearchButton_Clicked(object sender, EventArgs e)
+        {
+            string colour = colours[RankNameSearchColour.SelectedIndex];
+            string title = titles[RankNameSearchTitle.SelectedIndex];
+
+            int[] rankConstraints = utilities.RankNameSearchHelper.SearchRank(colour, title);
+            RankNameSearchRankInfo.Text = "The selected rank has a level of between " + rankConstraints[0] + " and " + rankConstraints[1];
         }
     }
 }

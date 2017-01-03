@@ -15,8 +15,8 @@
     <StackLayout x:Name="RankNameSection" Orientation="Vertical" HorizontalOptions="Center">
       <Picker x:Name="RankNameSearchColour" Title=" Colour "></Picker>
       <Picker x:Name="RankNameSearchTitle" Title=" Title "></Picker>
-      <Button x:Name="RankNameSearchButton" Text="Enter" TextColor="White" BackgroundColor="Green" />
-      <Label x:Name="RankNameSearchRankInfo" Text="" />
+      <Button x:Name="RankNameSearchButton" Text="Enter" TextColor="White" BackgroundColor="Green" Clicked="RankNameSearchButton_Clicked" />
+      <Label x:Name="RankNameSearchRankInfo" Text="" XAlign="Center" />
     </StackLayout>
   </StackLayout>
 </ContentPage>
