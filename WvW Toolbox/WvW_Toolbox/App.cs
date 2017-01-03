@@ -11,7 +11,7 @@ namespace WvW_Toolbox
     {
         public App()
         {
-            MainPage = new pages.ResetTimerPage();
+            MainPage = new pages.RankCalcPage();
         }
 
         protected override void OnStart()
