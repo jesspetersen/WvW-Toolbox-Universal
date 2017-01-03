@@ -13,6 +13,7 @@ namespace WvW_Toolbox.pages
         public RankCalcPage()
         {
             InitializeComponent();
+            RankNameSection.IsVisible = false;
         }
 
         private void RankNumberButton_Clicked(object sender, EventArgs e)

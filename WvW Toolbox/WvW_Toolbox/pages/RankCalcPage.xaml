@@ -2,19 +2,16 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="WvW_Toolbox.pages.RankCalcPage">
-  <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+  <StackLayout Orientation="Vertical">
+    <Label x:Name="RankCalcTitle" Text="RANK CALCULATOR" FontSize="30" FontAttributes="Bold" XAlign="Center" TextColor="Navy" />
     <Button x:Name="RankNumberButton" Text="Search by Rank Number" TextColor="White" FontSize="20" BackgroundColor="Red" Clicked="RankNumberButton_Clicked" />
-    <StackLayout x:Name="RankNumberSection">
-      <TableView RowHeight="30">
-        <TableSection>
-          <EntryCell x:Name="RankNumberEntryCell" Label="Rank Number:"></EntryCell>
-        </TableSection>
-      </TableView>
+    <StackLayout x:Name="RankNumberSection" Orientation="Vertical" HorizontalOptions="Center">
+      <Entry x:Name="RankNumberEntryCell" Placeholder="Enter Rank Number"></Entry>
       <Button x:Name="RankNumberSearchButton" Text="Enter" TextColor="White" BackgroundColor="Green" />
       <Label x:Name="RankNumberSearchRankInfo" Text="" />
     </StackLayout>
     <Button x:Name="RankNameButton" Text="Search by Rank Name" TextColor="White" FontSize="20" BackgroundColor="Gray" Clicked="RankNameButton_Clicked" />
-    <StackLayout x:Name="RankNameSection">
+    <StackLayout x:Name="RankNameSection" Orientation="Vertical" HorizontalOptions="Center">
       <Picker x:Name="RankNameSearchColour"></Picker>
       <Picker x:Name="RankNameSearchPosition"></Picker>
       <Button x:Name="RankNameSearchButton" Text="Enter" TextColor="White" BackgroundColor="Green" />
