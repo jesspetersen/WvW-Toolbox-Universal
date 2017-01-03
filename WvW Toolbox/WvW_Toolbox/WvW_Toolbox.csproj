@@ -43,6 +43,7 @@
       <DependentUpon>ResetTimerPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="utilities\RankNumberSearchHelper.cs" />
     <Compile Include="utilities\TimerCalculator.cs" />
   </ItemGroup>
   <ItemGroup>
