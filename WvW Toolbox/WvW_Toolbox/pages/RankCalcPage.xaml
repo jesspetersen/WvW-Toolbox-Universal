@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="WvW_Toolbox.pages.RankCalcPage">
   <StackLayout Orientation="Vertical">
-    <Label x:Name="Spacer" Text="" FontSize="20" />
+    <Label x:Name="Spacer" Text="" FontSize="5" />
     <Label x:Name="RankCalcTitle" Text="RANK CALCULATOR" FontSize="30" FontAttributes="Bold" XAlign="Center" TextColor="Navy" />
     <Button x:Name="RankNumberButton" Text="Search by Rank Number" TextColor="White" FontSize="20" BackgroundColor="Red" Clicked="RankNumberButton_Clicked" />
     <StackLayout x:Name="RankNumberSection" Orientation="Vertical" HorizontalOptions="Center">
