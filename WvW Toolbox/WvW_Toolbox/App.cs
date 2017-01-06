@@ -16,6 +16,7 @@ namespace WvW_Toolbox
             var tabContainer = new TabbedPage();
             tabContainer.Children.Add(new pages.ResetTimerPage() { Title = "Countdown" });
             tabContainer.Children.Add(new pages.RankCalcPage() { Title = "Ranks" });
+            tabContainer.Children.Add(new pages.SettingsPage() { Title = "Settings" });
 
             // The root page of your application
             MainPage = tabContainer;
