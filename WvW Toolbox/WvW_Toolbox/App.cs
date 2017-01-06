@@ -11,7 +11,14 @@ namespace WvW_Toolbox
     {
         public App()
         {
-            MainPage = new pages.RankCalcPage();
+            //http://www.kymphillpotts.com/common-ui-patterns-in-xamarin-forms-part-2-tabbed-pages/
+            // tabbed page 
+            var tabContainer = new TabbedPage();
+            tabContainer.Children.Add(new pages.ResetTimerPage() { Title = "Countdown" });
+            tabContainer.Children.Add(new pages.RankCalcPage() { Title = "Ranks" });
+
+            // The root page of your application
+            MainPage = tabContainer;
         }
 
         protected override void OnStart()
