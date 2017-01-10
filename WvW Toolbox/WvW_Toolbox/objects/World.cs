@@ -14,10 +14,16 @@ namespace WvW_Toolbox.objects
 
         public World() { }
 
-
         public World(string id, string name, string population)
         {
             this.id = id;
+            this.name = name;
+            this.population = population;
+        }
+
+        public World(int id, string name, string population)
+        {
+            this.id = Convert.ToString(id);
             this.name = name;
             this.population = population;
         }

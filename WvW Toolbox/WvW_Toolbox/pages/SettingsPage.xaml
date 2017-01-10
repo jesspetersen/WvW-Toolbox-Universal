@@ -12,13 +12,6 @@
             </StackLayout>
           </ViewCell>
         </TableSection>
-        <TableSection>
-          <ViewCell>
-            <StackLayout Orientation="Vertical" >
-              <Button x:Name="SaveSettingsButton" Text="Save" TextColor="White" BackgroundColor="Green" ></Button>
-            </StackLayout>
-          </ViewCell>
-        </TableSection>
         <TableSection Title="About">
           <ViewCell>
             <StackLayout Orientation="Vertical" HorizontalOptions="Center">
