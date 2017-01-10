@@ -24,6 +24,22 @@ namespace WvW_Toolbox.pages
                     ServerSelectPicker.Items.Add(w.name);
                 }
             }
+
+            if (Application.Current.Properties.ContainsKey("Server"))
+            {
+                foreach (objects.World w in worldList)
+                {
+                    if (w.id == (string)Application.Current.Properties["Server"])
+                        ServerSelectPicker.SelectedIndex = worldList.IndexOf(w);
+                }
+            }
+        }
+
+        public void ServerSelectPicker_SelectionChanged(object sender, EventArgs e)
+        {
+            Application.Current.Properties["Server"] = worldList[ServerSelectPicker.SelectedIndex].id;
+
+            Application.Current.SavePropertiesAsync();
         }
     }
 }
