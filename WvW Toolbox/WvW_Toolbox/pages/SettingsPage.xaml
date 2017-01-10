@@ -6,10 +6,16 @@
     <TableView Intent="Settings">
       <TableRoot>
         <TableSection Title="Server">
-          <ViewCell>
-            <StackLayout Orientation="Vertical" HorizontalOptions="Center">
-              <Picker x:Name="ServerSelectPicker" Title="Server"></Picker>
-            </StackLayout>
+          <ViewCell >
+            <Grid VerticalOptions = "LayoutOptions.FillAndExpand">
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+              </Grid.ColumnDefinitions>
+              <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+              </Grid.RowDefinitions>
+              <Picker Grid.Column="0" Grid.Row="0" x:Name="ServerSelectPicker" Title="Server" ></Picker>
+            </Grid>
           </ViewCell>
         </TableSection>
         <TableSection Title="About">

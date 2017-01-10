@@ -8,9 +8,9 @@ namespace WvW_Toolbox.objects
 {
     class World
     {
-        string name;
-        string id;
-        string population;
+        public string name { get; set; }
+        public string id { get; set; }
+        public string population { get; set; }
 
         public World() { }
 
