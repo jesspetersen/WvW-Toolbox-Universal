@@ -8,6 +8,8 @@ using Xamarin.Forms;
 
 namespace WvW_Toolbox.pages
 {
+    //REMEMBER TO CHECK THAT A SERVER HAS BEEN CHOSEN BEFORE RUNNING MATCH HELPER
+
 	public partial class MatchMonitorPage : ContentPage
 	{
 		public MatchMonitorPage ()
