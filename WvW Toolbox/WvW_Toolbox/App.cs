@@ -9,7 +9,6 @@ namespace WvW_Toolbox
 {
     public class App : Application
     {
-
         public App()
         {
             //http://www.kymphillpotts.com/common-ui-patterns-in-xamarin-forms-part-2-tabbed-pages/
@@ -34,12 +33,12 @@ namespace WvW_Toolbox
         protected override void OnSleep()
         {
             // Handle when your app sleeps
-            utilities.MatchHelper.GetAsyncContent();
         }
 
         protected override void OnResume()
         {
             // Handle when your app resumes
+            utilities.MatchHelper.GetAsyncContent();
         }
     }
 }

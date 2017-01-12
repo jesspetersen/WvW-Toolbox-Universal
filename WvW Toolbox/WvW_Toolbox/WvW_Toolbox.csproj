@@ -36,6 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
+    <Compile Include="Global.cs" />
     <Compile Include="objects\Match.cs" />
     <Compile Include="objects\Team.cs" />
     <Compile Include="objects\World.cs" />

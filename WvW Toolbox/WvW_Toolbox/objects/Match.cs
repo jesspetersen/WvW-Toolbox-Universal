@@ -8,9 +8,9 @@ namespace WvW_Toolbox.objects
 {
     public class Match
     {
-        Team red;
-        Team blue;
-        Team green;
+        public Team red { get; set; }
+        public Team blue { get; set; }
+        public Team green { get; set; }
 
         public Match(Team red, Team blue, Team green)
         {

@@ -17,18 +17,21 @@ namespace WvW_Toolbox.utilities
         public static async void GetAsyncContent()
         {
             HttpClient myClient = new HttpClient();
-            if (App.Current.Properties.ContainsKey("Server"))
+            if (Xamarin.Forms.Application.Current.Properties.ContainsKey("Server"))
             {
-                var content = await myClient.GetStringAsync(Url + Xamarin.Forms.Application.Current.Properties["Server"].ToString());
-                var match = JsonConvert.DeserializeObject<JsonMatch>(content);
+                try
+                {
+                    var content = await myClient.GetStringAsync(Url + Xamarin.Forms.Application.Current.Properties["Server"].ToString());
+                    JsonMatch match = JsonConvert.DeserializeObject<JsonMatch>(content);
 
-                objects.Team red = new objects.Team(match.worlds.red, match.all_worlds.red, match.scores.red, match.kills.red, match.deaths.red);
-                objects.Team blue = new objects.Team(match.worlds.blue, match.all_worlds.blue, match.scores.blue, match.kills.blue, match.deaths.blue);
-                objects.Team green = new objects.Team(match.worlds.green, match.all_worlds.green, match.scores.green, match.kills.green, match.deaths.green);
+                    objects.Team red = new objects.Team(match.worlds.red, match.all_worlds.red, match.scores.red, match.kills.red, match.deaths.red);
+                    objects.Team blue = new objects.Team(match.worlds.blue, match.all_worlds.blue, match.scores.blue, match.kills.blue, match.deaths.blue);
+                    objects.Team green = new objects.Team(match.worlds.green, match.all_worlds.green, match.scores.green, match.kills.green, match.deaths.green);
 
-                objects.Match thisMatch = new objects.Match(red, blue, green);
-
-                pages.MatchMonitorPage.FillData(thisMatch);
+                    Global.match = new objects.Match(red, blue, green);
+                }
+                catch { }
+                
             }
         }
     }
@@ -36,7 +39,7 @@ namespace WvW_Toolbox.utilities
     public class JsonMatch
     {
         [JsonProperty("id")]
-        public int id { get; set; }
+        public string id { get; set; }
 
         [JsonProperty("start_time")]
         public string start_time { get; set; }
@@ -60,7 +63,7 @@ namespace WvW_Toolbox.utilities
         public JsonKills kills { get; set; }
 
         [JsonProperty("maps")]
-        public string maps { get; set; }
+        public JsonMaps[] mapsArray { get; set; }
     }
 
     public class JsonScores
@@ -121,5 +124,59 @@ namespace WvW_Toolbox.utilities
 
         [JsonProperty("green")]
         public double green { get; set; }
+    }
+
+    public class JsonMaps
+    {
+        [JsonProperty("id")]
+        public string id { get; set; }
+
+        [JsonProperty("type")]
+        public string type { get; set; }
+
+        [JsonProperty("scores")]
+        public JsonScores scores { get; set; }
+
+        [JsonProperty("bonuses")]
+        public JsonBonuses bonuses { get; set; }
+
+        [JsonProperty("objectives")]
+        public JsonObjectives[] objectives { get; set; }
+
+        [JsonProperty("deaths")]
+        public JsonDeaths deaths { get; set; }
+
+        [JsonProperty("kills")]
+        public JsonKills kills { get; set; }
+    }
+
+    public class JsonBonuses
+    {
+        [JsonProperty("type")]
+        public string type { get; set; }
+
+        [JsonProperty("owner")]
+        public string owner { get; set; }
+    }
+
+    public class JsonObjectives
+    {
+        [JsonProperty("id")]
+        public string id { get; set; }
+
+        [JsonProperty("type")]
+        public string type { get; set; }
+
+        [JsonProperty("owner")]
+        public string owner { get; set; }
+
+        [JsonProperty("last_flipped")]
+        public string last_flipped { get; set; }
+
+        [JsonProperty("claimed_by")]
+        public string claimed_by { get; set; }
+
+        [JsonProperty("owner")]
+        public string claimed_at { get; set; }
     }
 }

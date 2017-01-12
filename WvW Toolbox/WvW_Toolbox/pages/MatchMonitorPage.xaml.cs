@@ -15,13 +15,22 @@ namespace WvW_Toolbox.pages
 		public MatchMonitorPage ()
 		{
 			InitializeComponent ();
+            if (Global.match != null)
+                FillData(Global.match);
 		}
 
-        public static void FillData(objects.Match match)
+        public void Reload_Clicked(object sender, EventArgs e)
+        {
+            FillData(Global.match);
+        }
+
+        public void FillData(objects.Match match)
         {
             try
             {
-                
+                RedWorldButton.Text = utilities.WorldSearchHelper.FindWorldById(Convert.ToInt32(match.red.mainWorldID)).name;
+                BlueWorldButton.Text = utilities.WorldSearchHelper.FindWorldById(Convert.ToInt32(match.blue.mainWorldID)).name;
+                GreenWorldButton.Text = utilities.WorldSearchHelper.FindWorldById(Convert.ToInt32(match.green.mainWorldID)).name;
             }
             catch
             {

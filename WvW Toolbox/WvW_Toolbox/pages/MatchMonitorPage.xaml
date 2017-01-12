@@ -4,12 +4,13 @@
              x:Class="WvW_Toolbox.pages.MatchMonitorPage">
   <StackLayout Orientation="Vertical">
     <Label x:Name="Spacer" Text="" FontSize="5" />
-    <Label x:Name="MatchMonitoritle" Text="CURRENT MATCH" FontSize="30" FontAttributes="Bold" XAlign="Center" TextColor="Maroon" />
+    <Label x:Name="MatchMonitorTitle" Text="CURRENT MATCH" FontSize="30" FontAttributes="Bold" XAlign="Center" TextColor="Maroon" />
     <Button x:Name="RedWorldButton" Text="Red World" TextColor="White" FontSize="20" BackgroundColor="Red" />
     <Label x:Name="RedWorldGlanceText" Text="POINTS: 0 KDR: 0" FontSize="16" XAlign="Center" />
     <Button x:Name="GreenWorldButton" Text="Green World" TextColor="White" FontSize="20" BackgroundColor="Green" />
     <Label x:Name="GreenWorldGlanceText" Text="POINTS: 0 KDR: 0" FontSize="16" XAlign="Center" />
     <Button x:Name="BlueWorldButton" Text="Blue World" TextColor="White" FontSize="20" BackgroundColor="Blue" />
     <Label x:Name="BlueWorldGlanceText" Text="POINTS: 0 KDR: 0" FontSize="16" XAlign="Center" />
+    <Button x:Name="ReloadButton" Text="RELOAD" TextColor="White" FontSize="20" BackgroundColor="Orange" Clicked="Reload_Clicked" />
   </StackLayout>
 </ContentPage>
