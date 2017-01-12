@@ -38,6 +38,9 @@
     <Compile Include="App.cs" />
     <Compile Include="objects\Team.cs" />
     <Compile Include="objects\World.cs" />
+    <Compile Include="pages\MatchMonitorPage.xaml.cs">
+      <DependentUpon>MatchMonitorPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="pages\RankCalcPage.xaml.cs">
       <DependentUpon>RankCalcPage.xaml</DependentUpon>
     </Compile>
@@ -109,6 +112,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="pages\SettingsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="pages\MatchMonitorPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
