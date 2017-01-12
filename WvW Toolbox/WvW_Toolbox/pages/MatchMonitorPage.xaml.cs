@@ -16,5 +16,17 @@ namespace WvW_Toolbox.pages
 		{
 			InitializeComponent ();
 		}
+
+        public static void FillData(objects.Match match)
+        {
+            try
+            {
+                
+            }
+            catch
+            {
+                App.Current.MainPage.DisplayAlert("Alert", "Unable to access GW2 server for match data. Please check your internet connection, firewall, and chosen server.", "OK");
+            }
+        }
 	}
 }

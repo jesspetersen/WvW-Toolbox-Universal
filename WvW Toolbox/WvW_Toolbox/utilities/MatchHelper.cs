@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using Android.Net;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,12 +12,24 @@ namespace WvW_Toolbox.utilities
     class MatchHelper
     {
         private const string Url = "https://api.guildwars2.com/v2/wvw/matches/stats?world=";
+        JsonMatch matchInfo;
 
         public static async void GetAsyncContent()
         {
             HttpClient myClient = new HttpClient();
-            var content = await myClient.GetStringAsync(Url + Xamarin.Forms.Application.Current.Properties["Server"].ToString());
-            var match = JsonConvert.DeserializeObject<JsonMatch>(content);
+            if (App.Current.Properties.ContainsKey("Server"))
+            {
+                var content = await myClient.GetStringAsync(Url + Xamarin.Forms.Application.Current.Properties["Server"].ToString());
+                var match = JsonConvert.DeserializeObject<JsonMatch>(content);
+
+                objects.Team red = new objects.Team(match.worlds.red, match.all_worlds.red, match.scores.red, match.kills.red, match.deaths.red);
+                objects.Team blue = new objects.Team(match.worlds.blue, match.all_worlds.blue, match.scores.blue, match.kills.blue, match.deaths.blue);
+                objects.Team green = new objects.Team(match.worlds.green, match.all_worlds.green, match.scores.green, match.kills.green, match.deaths.green);
+
+                objects.Match thisMatch = new objects.Match(red, blue, green);
+
+                pages.MatchMonitorPage.FillData(thisMatch);
+            }
         }
     }
 
@@ -53,13 +66,13 @@ namespace WvW_Toolbox.utilities
     public class JsonScores
     {
         [JsonProperty("red")]
-        public int red { get; set; }
+        public double red { get; set; }
 
         [JsonProperty("blue")]
-        public int blue { get; set; }
+        public double blue { get; set; }
 
         [JsonProperty("green")]
-        public int green { get; set; }
+        public double green { get; set; }
     }
 
     public class JsonWorlds
