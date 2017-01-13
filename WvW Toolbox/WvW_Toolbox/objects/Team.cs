@@ -38,6 +38,19 @@ namespace WvW_Toolbox.objects
             }
         }
 
+        public Team(string mainWorldID, int[] worldIDs, string points, string kills, string deaths)
+        {
+            this.mainWorldID = mainWorldID;
+            this.points = points;
+            this.kills = kills;
+            this.deaths = deaths;
+
+            for (int i = 0; i < worldIDs.Length; i++)
+            {
+                this.worldIDs[i] = Convert.ToString(worldIDs[i]);
+            }
+        }
+
         public Team(int mainWorldID, int[] worldIDs, int points, int kills, int deaths)
         {
             this.mainWorldID = Convert.ToString(mainWorldID);

@@ -1,4 +1,5 @@
 ﻿using Android.Net;
+using Android.Util;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -11,8 +12,8 @@ namespace WvW_Toolbox.utilities
 {
     class MatchHelper
     {
-        private const string Url = "https://api.guildwars2.com/v2/wvw/matches/stats?world=";
-        JsonMatch matchInfo;
+        private const string Url = "https://api.guildwars2.com/v2/wvw/matches?world=";
+
 
         public static async void GetAsyncContent()
         {
@@ -24,14 +25,17 @@ namespace WvW_Toolbox.utilities
                     var content = await myClient.GetStringAsync(Url + Xamarin.Forms.Application.Current.Properties["Server"].ToString());
                     JsonMatch match = JsonConvert.DeserializeObject<JsonMatch>(content);
 
-                    objects.Team red = new objects.Team(match.worlds.red, match.all_worlds.red, match.scores.red, match.kills.red, match.deaths.red);
-                    objects.Team blue = new objects.Team(match.worlds.blue, match.all_worlds.blue, match.scores.blue, match.kills.blue, match.deaths.blue);
-                    objects.Team green = new objects.Team(match.worlds.green, match.all_worlds.green, match.scores.green, match.kills.green, match.deaths.green);
+                    string[] redWorlds = match.all_worlds.red.Select(i => i.ToString()).ToArray();
+                    string[] blueWorlds = match.all_worlds.blue.Select(i => i.ToString()).ToArray();
+                    string[] greenWorlds = match.all_worlds.green.Select(i => i.ToString()).ToArray();
 
-                    Global.match = new objects.Match(red, blue, green);
+                    objects.Team redTeam = new objects.Team(""+match.worlds.red, redWorlds, ""+match.scores.red, ""+match.kills.red, ""+match.deaths.red);
+                    objects.Team blueTeam = new objects.Team(""+match.worlds.blue, blueWorlds, ""+match.scores.blue, ""+match.kills.blue, ""+match.deaths.blue);
+                    objects.Team greenTeam = new objects.Team(""+match.worlds.green, greenWorlds, ""+match.scores.green, ""+match.kills.green, ""+match.deaths.green);
+
+                    Global.match = new objects.Match(redTeam, blueTeam, greenTeam);
                 }
-                catch { }
-                
+                catch (Exception e) { Log.Info("Exception Caught", e.ToString());  }
             }
         }
     }
@@ -63,7 +67,7 @@ namespace WvW_Toolbox.utilities
         public JsonKills kills { get; set; }
 
         [JsonProperty("maps")]
-        public JsonMaps[] mapsArray { get; set; }
+        public JsonMaps[] maps { get; set; }
     }
 
     public class JsonScores
@@ -138,7 +142,7 @@ namespace WvW_Toolbox.utilities
         public JsonScores scores { get; set; }
 
         [JsonProperty("bonuses")]
-        public JsonBonuses bonuses { get; set; }
+        public JsonBonuses[] bonuses { get; set; }
 
         [JsonProperty("objectives")]
         public JsonObjectives[] objectives { get; set; }
@@ -176,7 +180,7 @@ namespace WvW_Toolbox.utilities
         [JsonProperty("claimed_by")]
         public string claimed_by { get; set; }
 
-        [JsonProperty("owner")]
+        [JsonProperty("claimed_at")]
         public string claimed_at { get; set; }
     }
 }
