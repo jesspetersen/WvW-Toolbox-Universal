@@ -58,20 +58,25 @@ namespace WvW_Toolbox.pages
                     BlueExpand();
             }
 
-            for (int i = 0; i <match.red.worldIDs.Length; i++)
+            if (RedWorldsLabel.Text == "Worlds in this Team:")
             {
-                RedWorldsLabel.Text += "\n" + utilities.WorldSearchHelper.FindWorldById(Convert.ToInt32(match.red.worldIDs[i])).name;
+                for (int i = 0; i <match.red.worldIDs.Length; i++)
+                {
+                    RedWorldsLabel.Text += "\n" + utilities.WorldSearchHelper.FindWorldById(Convert.ToInt32(match.red.worldIDs[i])).name;
+                }
+
+                for (int i = 0; i < match.blue.worldIDs.Length; i++)
+                {
+                    BlueWorldsLabel.Text += "\n" + utilities.WorldSearchHelper.FindWorldById(Convert.ToInt32(match.blue.worldIDs[i])).name;
+                }
+
+                for (int i = 0; i < match.green.worldIDs.Length; i++)
+                {
+                    GreenWorldsLabel.Text += "\n" + utilities.WorldSearchHelper.FindWorldById(Convert.ToInt32(match.green.worldIDs[i])).name;
+                }
             }
 
-            for (int i = 0; i < match.blue.worldIDs.Length; i++)
-            {
-                BlueWorldsLabel.Text += "\n" + utilities.WorldSearchHelper.FindWorldById(Convert.ToInt32(match.blue.worldIDs[i])).name;
-            }
-
-            for (int i = 0; i < match.green.worldIDs.Length; i++)
-            {
-                GreenWorldsLabel.Text += "\n" + utilities.WorldSearchHelper.FindWorldById(Convert.ToInt32(match.green.worldIDs[i])).name;
-            }
+            
         }
 
         public void RedExpand()
