@@ -5,12 +5,21 @@
   <StackLayout Orientation="Vertical">
     <Label x:Name="Spacer" Text="" FontSize="5" />
     <Label x:Name="MatchMonitorTitle" Text="CURRENT MATCH" FontSize="30" FontAttributes="Bold" XAlign="Center" TextColor="Maroon" />
-    <Button x:Name="RedWorldButton" Text="Red World" TextColor="White" FontSize="20" BackgroundColor="Red" />
+    <Button x:Name="RedWorldButton" Text="Red World" TextColor="White" FontSize="20" BackgroundColor="Red" Clicked="RedWorldButton_Clicked" />
     <Label x:Name="RedWorldGlanceText" Text="POINTS: 0 KDR: 0" FontSize="16" XAlign="Center" />
-    <Button x:Name="GreenWorldButton" Text="Green World" TextColor="White" FontSize="20" BackgroundColor="Green" />
+    <StackLayout x:Name="RedExpandSection" Orientation="Vertical" HorizontalOptions="Center">
+      <Label x:Name="RedWorldsLabel" Text="Worlds in this Team:" />
+    </StackLayout>
+    <Button x:Name="GreenWorldButton" Text="Green World" TextColor="White" FontSize="20" BackgroundColor="Green" Clicked="GreenWorldButton_Clicked" />
     <Label x:Name="GreenWorldGlanceText" Text="POINTS: 0 KDR: 0" FontSize="16" XAlign="Center" />
-    <Button x:Name="BlueWorldButton" Text="Blue World" TextColor="White" FontSize="20" BackgroundColor="Blue" />
+    <StackLayout x:Name="GreenExpandSection" Orientation="Vertical" HorizontalOptions="Center">
+      <Label x:Name="GreenWorldsLabel" Text="Worlds in this Team:" />
+    </StackLayout>
+    <Button x:Name="BlueWorldButton" Text="Blue World" TextColor="White" FontSize="20" BackgroundColor="Blue" Clicked="BlueWorldButton_Clicked" />
     <Label x:Name="BlueWorldGlanceText" Text="POINTS: 0 KDR: 0" FontSize="16" XAlign="Center" />
+    <StackLayout x:Name="BlueExpandSection" Orientation="Vertical" HorizontalOptions="Center">
+      <Label x:Name="BlueWorldsLabel" Text="Worlds in this Team:" />
+    </StackLayout>
     <Button x:Name="ReloadButton" Text="RELOAD" TextColor="White" FontSize="20" BackgroundColor="Orange" Clicked="Reload_Clicked" />
   </StackLayout>
 </ContentPage>
