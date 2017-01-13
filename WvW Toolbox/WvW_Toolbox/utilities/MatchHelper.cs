@@ -34,6 +34,18 @@ namespace WvW_Toolbox.utilities
                     objects.Team greenTeam = new objects.Team(""+match.worlds.green, greenWorlds, ""+match.scores.green, ""+match.kills.green, ""+match.deaths.green);
 
                     Global.match = new objects.Match(redTeam, blueTeam, greenTeam);
+
+                    Global.allObjectives = new List<objects.Objective>();
+
+                    for (int i = 0; i < match.maps.Length; i++)
+                    {
+                        for (int j = 0; j < match.maps[i].objectives.Length; j++)
+                        {
+                            objects.Objective o = new objects.Objective(match.maps[i].objectives[j].id, match.maps[i].objectives[j].type, match.maps[i].objectives[j].owner);
+                            Global.allObjectives.Add(o);
+                        }
+                    }
+                    
                 }
                 catch (Exception e) { Log.Info("Exception Caught", e.ToString());  }
             }

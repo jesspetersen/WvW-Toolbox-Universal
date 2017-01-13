@@ -76,7 +76,23 @@ namespace WvW_Toolbox.pages
                 }
             }
 
-            
+            int[] objectiveCount = utilities.ObjectiveSorter.SortObjectives();
+
+            RedCastlesLabel.Text = "" + objectiveCount[0];
+            RedKeepsLabel.Text = "" + objectiveCount[1];
+            RedTowersLabel.Text = "" + objectiveCount[2];
+            RedCampsLabel.Text = "" + objectiveCount[3];
+
+            GreenCastlesLabel.Text = "" + objectiveCount[4];
+            GreenKeepsLabel.Text = "" + objectiveCount[5];
+            GreenTowersLabel.Text = "" + objectiveCount[6];
+            GreenCampsLabel.Text = "" + objectiveCount[7];
+
+            BlueCastlesLabel.Text = "" + objectiveCount[8];
+            BlueKeepsLabel.Text = "" + objectiveCount[9];
+            BlueTowersLabel.Text = "" + objectiveCount[10];
+            BlueCampsLabel.Text = "" + objectiveCount[11];
+
         }
 
         public void RedExpand()

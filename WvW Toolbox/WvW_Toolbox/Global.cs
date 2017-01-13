@@ -9,5 +9,6 @@ namespace WvW_Toolbox
     public class Global
     {
         public static objects.Match match = null;
+        public static List<objects.Objective> allObjectives = null;
     }
 }

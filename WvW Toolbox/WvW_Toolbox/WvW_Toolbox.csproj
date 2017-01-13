@@ -38,6 +38,7 @@
     <Compile Include="App.cs" />
     <Compile Include="Global.cs" />
     <Compile Include="objects\Match.cs" />
+    <Compile Include="objects\Objective.cs" />
     <Compile Include="objects\Team.cs" />
     <Compile Include="objects\World.cs" />
     <Compile Include="pages\MatchMonitorPage.xaml.cs">
@@ -59,6 +60,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="utilities\MatchHelper.cs" />
+    <Compile Include="utilities\ObjectiveSorter.cs" />
     <Compile Include="utilities\RankNameSearchHelper.cs" />
     <Compile Include="utilities\RankNumberSearchHelper.cs" />
     <Compile Include="utilities\TimerCalculator.cs" />
