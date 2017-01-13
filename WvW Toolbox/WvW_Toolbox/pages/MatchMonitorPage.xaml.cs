@@ -81,38 +81,53 @@ namespace WvW_Toolbox.pages
 
         public void RedExpand()
         {
-            if (GreenExpandSection.IsVisible)
-                GreenExpandSection.IsVisible = false;
-
-            if (BlueExpandSection.IsVisible)
-                BlueExpandSection.IsVisible = false;
-
             if (RedExpandSection.IsVisible == false)
+            {
+                if (GreenExpandSection.IsVisible)
+                    GreenExpandSection.IsVisible = false;
+
+                if (BlueExpandSection.IsVisible)
+                    BlueExpandSection.IsVisible = false;
+
                 RedExpandSection.IsVisible = true;
+            }
+            else
+                RedExpandSection.IsVisible = false;
         }
 
         public void GreenExpand()
         {
-            if (BlueExpandSection.IsVisible)
-                BlueExpandSection.IsVisible = false;
-
-            if (RedExpandSection.IsVisible)
-                RedExpandSection.IsVisible = false;
-
             if (GreenExpandSection.IsVisible == false)
+            {
+                if (BlueExpandSection.IsVisible)
+                    BlueExpandSection.IsVisible = false;
+
+                if (RedExpandSection.IsVisible)
+                    RedExpandSection.IsVisible = false;
+
                 GreenExpandSection.IsVisible = true;
+            }
+            else
+                GreenExpandSection.IsVisible = false;
+
         }
 
         public void BlueExpand()
         {
-            if (RedExpandSection.IsVisible)
-                RedExpandSection.IsVisible = false;
-
-            if (GreenExpandSection.IsVisible)
-                GreenExpandSection.IsVisible = false;
-
             if (BlueExpandSection.IsVisible == false)
-                BlueExpandSection.IsVisible = true;
+            {
+                if (RedExpandSection.IsVisible)
+                    RedExpandSection.IsVisible = false;
+
+                if (GreenExpandSection.IsVisible)
+                    GreenExpandSection.IsVisible = false;
+
+                if (BlueExpandSection.IsVisible == false)
+                    BlueExpandSection.IsVisible = true;
+            }
+            else
+                BlueExpandSection.IsVisible = false;
+
         }
 
         private void RedWorldButton_Clicked(object sender, EventArgs e) { RedExpand(); }

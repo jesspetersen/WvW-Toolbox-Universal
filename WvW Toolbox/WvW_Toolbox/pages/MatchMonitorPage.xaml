@@ -8,18 +8,93 @@
       <Label x:Name="MatchMonitorTitle" Text="CURRENT MATCH" FontSize="30" FontAttributes="Bold" XAlign="Center" TextColor="Maroon" />
       <Button x:Name="RedWorldButton" Text="Red World" TextColor="White" FontSize="20" BackgroundColor="Red" Clicked="RedWorldButton_Clicked" />
       <Label x:Name="RedWorldGlanceText" Text="POINTS: 0 KDR: 0" FontSize="16" XAlign="Center" />
-      <StackLayout x:Name="RedExpandSection" Orientation="Vertical" >
-        <Label x:Name="RedWorldsLabel" Text="Worlds in this Team:" />
+      <StackLayout x:Name="RedExpandSection" Orientation="Vertical" IsVisible="false" >
+        <Label x:Name="RedWorldsLabel" XAlign="Center" Text="Worlds in this Team:" />
+        <Grid>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="80"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+          </Grid.ColumnDefinitions>
+          <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+          </Grid.RowDefinitions>
+          <Image Source="castle.png" Grid.Column="0" Grid.Row="0"></Image>
+          <Label Text="Castles" YAlign="Center" Grid.Column="1" Grid.Row="0" XAlign="Center" />
+          <Label x:Name="RedCastlesLabel" TextColor="Red" FontAttributes="Bold" XAlign="Center" YAlign="Center" Text="1" Grid.Column="2" Grid.Row="0" />
+          <Image Source="keep.png" Grid.Column="0" Grid.Row="1"></Image>
+          <Label Text="Keeps" YAlign="Center" Grid.Column="1" Grid.Row="1" XAlign="Center" />
+          <Label x:Name="RedKeepsLabel" TextColor="Red" FontAttributes="Bold" YAlign="Center" XAlign="Center" Text="1" Grid.Column="2" Grid.Row="1" />
+          <Image Source="tower.png" Grid.Column="0" Grid.Row="2"></Image>
+          <Label Text="Towers" Grid.Column="1" Grid.Row="2" YAlign="Center" XAlign="Center" />
+          <Label x:Name="RedTowersLabel" TextColor="Red" FontAttributes="Bold" YAlign="Center" XAlign="Center" Text="1" Grid.Column="2" Grid.Row="2" />
+          <Image Source="camp.png" Grid.Column="0" Grid.Row="3"></Image>
+          <Label Text="Camps" Grid.Column="1" Grid.Row="3" YAlign="Center" XAlign="Center" />
+          <Label x:Name="RedCampsLabel" TextColor="Red" FontAttributes="Bold" YAlign="Center" XAlign="Center" Text="1" Grid.Column="2" Grid.Row="3" />
+        </Grid>
       </StackLayout>
       <Button x:Name="GreenWorldButton" Text="Green World" TextColor="White" FontSize="20" BackgroundColor="Green" Clicked="GreenWorldButton_Clicked" />
       <Label x:Name="GreenWorldGlanceText" Text="POINTS: 0 KDR: 0" FontSize="16" XAlign="Center" />
-      <StackLayout x:Name="GreenExpandSection" Orientation="Vertical">
-        <Label x:Name="GreenWorldsLabel" Text="Worlds in this Team:" />
+      <StackLayout x:Name="GreenExpandSection" Orientation="Vertical" IsVisible="false">
+        <Label x:Name="GreenWorldsLabel" XAlign="Center" Text="Worlds in this Team:" />
+        <Grid>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="80"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+          </Grid.ColumnDefinitions>
+          <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+          </Grid.RowDefinitions>
+          <Image Source="castle.png" Grid.Column="0" Grid.Row="0"></Image>
+          <Label Text="Castles" Grid.Column="1" Grid.Row="0" YAlign="Center" XAlign="Center" />
+          <Label x:Name="GreenCastlesLabel" TextColor="Green" FontAttributes="Bold" YAlign="Center" XAlign="Center" Text="1" Grid.Column="2" Grid.Row="0" />
+          <Image Source="keep.png" Grid.Column="0" Grid.Row="1"></Image>
+          <Label Text="Keeps" Grid.Column="1" Grid.Row="1" YAlign="Center" XAlign="Center" />
+          <Label x:Name="GreenKeepsLabel" TextColor="Green" FontAttributes="Bold" YAlign="Center" XAlign="Center" Text="1" Grid.Column="2" Grid.Row="1" />
+          <Image Source="tower.png" Grid.Column="0" Grid.Row="2"></Image>
+          <Label Text="Towers" Grid.Column="1" Grid.Row="2" YAlign="Center" XAlign="Center" />
+          <Label x:Name="GreenTowersLabel" TextColor="Green" FontAttributes="Bold" YAlign="Center" XAlign="Center" Text="1" Grid.Column="2" Grid.Row="2" />
+          <Image Source="camp.png" Grid.Column="0" Grid.Row="3"></Image>
+          <Label Text="Camps" Grid.Column="1" Grid.Row="3" YAlign="Center" XAlign="Center" />
+          <Label x:Name="GreenCampsLabel" TextColor="Green" FontAttributes="Bold" YAlign="Center" XAlign="Center" Text="1" Grid.Column="2" Grid.Row="3" />
+        </Grid>
       </StackLayout>
       <Button x:Name="BlueWorldButton" Text="Blue World" TextColor="White" FontSize="20" BackgroundColor="Blue" Clicked="BlueWorldButton_Clicked" />
       <Label x:Name="BlueWorldGlanceText" Text="POINTS: 0 KDR: 0" FontSize="16" XAlign="Center" />
-      <StackLayout x:Name="BlueExpandSection" Orientation="Vertical">
-        <Label x:Name="BlueWorldsLabel" Text="Worlds in this Team:" />
+      <StackLayout x:Name="BlueExpandSection" Orientation="Vertical" IsVisible="false">
+        <Label x:Name="BlueWorldsLabel" XAlign="Center" Text="Worlds in this Team:" />
+        <Grid>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="80"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+          </Grid.ColumnDefinitions>
+          <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+          </Grid.RowDefinitions>
+          <Image Source="castle.png" Grid.Column="0" Grid.Row="0"></Image>
+          <Label Text="Castles" Grid.Column="1" Grid.Row="0" YAlign="Center" XAlign="Center" />
+          <Label x:Name="BlueCastlesLabel" TextColor="Blue" FontAttributes="Bold" YAlign="Center" XAlign="Center" Text="1" Grid.Column="2" Grid.Row="0" />
+          <Image Source="keep.png" Grid.Column="0" Grid.Row="1"></Image>
+          <Label Text="Keeps" Grid.Column="1" Grid.Row="1" YAlign="Center" XAlign="Center" />
+          <Label x:Name="BlueKeepsLabel" TextColor="Blue" FontAttributes="Bold" YAlign="Center" XAlign="Center" Text="1" Grid.Column="2" Grid.Row="1" />
+          <Image Source="tower.png" Grid.Column="0" Grid.Row="2"></Image>
+          <Label Text="Towers" Grid.Column="1" Grid.Row="2" YAlign="Center" XAlign="Center" />
+          <Label x:Name="BlueTowersLabel" TextColor="Blue" FontAttributes="Bold" YAlign="Center" XAlign="Center" Text="1" Grid.Column="2" Grid.Row="2" />
+          <Image Source="camp.png" Grid.Column="0" Grid.Row="3"></Image>
+          <Label Text="Camps" Grid.Column="1" Grid.Row="3" YAlign="Center" XAlign="Center" />
+          <Label x:Name="BlueCampsLabel" TextColor="Blue" FontAttributes="Bold" YAlign="Center" XAlign="Center" Text="1" Grid.Column="2" Grid.Row="3" />
+        </Grid>
       </StackLayout>
       <Button x:Name="ReloadButton" Text="RELOAD" TextColor="White" FontSize="20" BackgroundColor="Orange" Clicked="Reload_Clicked" />
     </StackLayout>
