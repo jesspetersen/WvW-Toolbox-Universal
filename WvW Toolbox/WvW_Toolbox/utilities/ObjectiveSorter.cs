@@ -9,7 +9,7 @@ namespace WvW_Toolbox.utilities
 {
     class ObjectiveSorter
     {
-        public static int[] SortObjectives()
+        public static int[] SortObjectivesForCount()
         {
             int[] objectiveCount = new int[12];
 

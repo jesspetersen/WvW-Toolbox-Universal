@@ -76,7 +76,7 @@ namespace WvW_Toolbox.pages
                 }
             }
 
-            int[] objectiveCount = utilities.ObjectiveSorter.SortObjectives();
+            int[] objectiveCount = utilities.ObjectiveSorter.SortObjectivesForCount();
 
             RedCastlesLabel.Text = "" + objectiveCount[0];
             RedKeepsLabel.Text = "" + objectiveCount[1];

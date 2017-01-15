@@ -69,6 +69,7 @@
   <ItemGroup>
     <None Include="GettingStarted.Xamarin" />
     <None Include="packages.config" />
+    <None Include="resources\objectives.json" />
     <None Include="resources\worlds.json" />
   </ItemGroup>
   <ItemGroup>
