@@ -20,13 +20,13 @@
         </TableSection>
         <TableSection Title="About">
           <ViewCell>
-            <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
               <Label x:Name="AboutLabel0" Text="App made by Jess Petersen" />
-              <Label x:Name="AboutLabel1" Text="All images (including castle, rook, circus tent, palace and refresh) sourced from Icons 8 (icons8.com)." />
             </StackLayout>
           </ViewCell>
         </TableSection>
       </TableRoot>
     </TableView>
+    <Label x:Name="AboutLabel1" LineBreakMode="WordWrap" Text="All images (including castle, rook, circus tent, palace and refresh) sourced from Icons 8 (icons8.com)." />
   </StackLayout>
 </ContentPage>
