@@ -18,5 +18,11 @@ namespace WvW_Toolbox.objects
             this.type = type;
             this.owner = owner;
         }
+
+        public Objective(string id, string type)
+        {
+            this.id = id;
+            this.type = type;
+        }
     }
 }

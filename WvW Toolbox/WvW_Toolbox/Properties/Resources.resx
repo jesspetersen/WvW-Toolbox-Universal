@@ -117,6 +117,1998 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AllObjectivesJson" xml:space="preserve">
+    <value>[
+  {
+    "id": "1099-99",
+    "name": "Hamm's Lab",
+    "sector_id": 1314,
+    "type": "Camp",
+    "map_type": "RedHome",
+    "map_id": 1099,
+    "coord": [
+      10743.8,
+      9492.51,
+      -2955
+    ],
+    "label_coord": [
+      10864,
+      9559.49
+    ],
+    "marker": "https://render.guildwars2.com/file/015D365A08AAE105287A100AAE04529FDAE14155/102532.png",
+    "chat_link": "[&amp;DGMAAABLBAAA]"
+  },
+  {
+    "id": "1143-99",
+    "name": "Zakk's Lab",
+    "sector_id": 1358,
+    "type": "Camp",
+    "map_type": "BlueHome",
+    "map_id": 1143,
+    "marker": "https://render.guildwars2.com/file/015D365A08AAE105287A100AAE04529FDAE14155/102532.png",
+    "chat_link": "[&amp;DGMAAAB3BAAA]"
+  },
+  {
+    "id": "1102-99",
+    "name": "Lesh's Lab",
+    "sector_id": 1291,
+    "type": "Camp",
+    "map_type": "GreenHome",
+    "map_id": 1102,
+    "marker": "https://render.guildwars2.com/file/015D365A08AAE105287A100AAE04529FDAE14155/102532.png",
+    "chat_link": "[&amp;DGMAAABOBAAA]"
+  },
+  {
+    "id": "1099-100",
+    "name": "Bauer Farmstead",
+    "sector_id": 1280,
+    "type": "Camp",
+    "map_type": "RedHome",
+    "map_id": 1099,
+    "coord": [
+      11888.6,
+      11290.8,
+      -4733.89
+    ],
+    "label_coord": [
+      11793.7,
+      11258.4
+    ],
+    "marker": "https://render.guildwars2.com/file/015D365A08AAE105287A100AAE04529FDAE14155/102532.png",
+    "chat_link": "[&amp;DGQAAABLBAAA]"
+  },
+  {
+    "id": "1143-100",
+    "name": "Gee Farmstead",
+    "sector_id": 1292,
+    "type": "Camp",
+    "map_type": "BlueHome",
+    "map_id": 1143,
+    "marker": "https://render.guildwars2.com/file/015D365A08AAE105287A100AAE04529FDAE14155/102532.png",
+    "chat_link": "[&amp;DGQAAAB3BAAA]"
+  },
+  {
+    "id": "1102-100",
+    "name": "Barrett Farmstead",
+    "sector_id": 1345,
+    "type": "Camp",
+    "map_type": "GreenHome",
+    "map_id": 1102,
+    "marker": "https://render.guildwars2.com/file/015D365A08AAE105287A100AAE04529FDAE14155/102532.png",
+    "chat_link": "[&amp;DGQAAABOBAAA]"
+  },
+  {
+    "id": "1099-101",
+    "name": "McLain's Encampment",
+    "sector_id": 1286,
+    "type": "Camp",
+    "map_type": "RedHome",
+    "map_id": 1099,
+    "coord": [
+      9584.12,
+      11295,
+      -3857.78
+    ],
+    "label_coord": [
+      9712.8,
+      11263.5
+    ],
+    "marker": "https://render.guildwars2.com/file/015D365A08AAE105287A100AAE04529FDAE14155/102532.png",
+    "chat_link": "[&amp;DGUAAABLBAAA]"
+  },
+  {
+    "id": "1143-101",
+    "name": "Habib's Encampment",
+    "sector_id": 1306,
+    "type": "Camp",
+    "map_type": "BlueHome",
+    "map_id": 1143,
+    "marker": "https://render.guildwars2.com/file/015D365A08AAE105287A100AAE04529FDAE14155/102532.png",
+    "chat_link": "[&amp;DGUAAAB3BAAA]"
+  },
+  {
+    "id": "1102-101",
+    "name": "Patrick's Encampment",
+    "sector_id": 1342,
+    "type": "Camp",
+    "map_type": "GreenHome",
+    "map_id": 1102,
+    "marker": "https://render.guildwars2.com/file/015D365A08AAE105287A100AAE04529FDAE14155/102532.png",
+    "chat_link": "[&amp;DGUAAABOBAAA]"
+  },
+  {
+    "id": "1099-102",
+    "name": "O'del Academy",
+    "sector_id": 1352,
+    "type": "Tower",
+    "map_type": "RedHome",
+    "map_id": 1099,
+    "coord": [
+      9831.82,
+      9507.67,
+      -2897.5
+    ],
+    "label_coord": [
+      9832.4,
+      9594.63
+    ],
+    "marker": "https://render.guildwars2.com/file/ABEC80C79576A103EA33EC66FCB99B77291A2F0D/102531.png",
+    "chat_link": "[&amp;DGYAAABLBAAA]"
+  },
+  {
+    "id": "1143-102",
+    "name": "Kay'li Academy",
+    "sector_id": 1337,
+    "type": "Tower",
+    "map_type": "BlueHome",
+    "map_id": 1143,
+    "marker": "https://render.guildwars2.com/file/ABEC80C79576A103EA33EC66FCB99B77291A2F0D/102531.png",
+    "chat_link": "[&amp;DGYAAAB3BAAA]"
+  },
+  {
+    "id": "1102-102",
+    "name": "Y'lan Academy",
+    "sector_id": 1336,
+    "type": "Tower",
+    "map_type": "GreenHome",
+    "map_id": 1102,
+    "marker": "https://render.guildwars2.com/file/ABEC80C79576A103EA33EC66FCB99B77291A2F0D/102531.png",
+    "chat_link": "[&amp;DGYAAABOBAAA]"
+  },
+  {
+    "id": "1099-104",
+    "name": "Eternal Necropolis",
+    "sector_id": 1308,
+    "type": "Tower",
+    "map_type": "RedHome",
+    "map_id": 1099,
+    "coord": [
+      11739.2,
+      9654.33,
+      -4452.81
+    ],
+    "label_coord": [
+      11802.7,
+      9664.75
+    ],
+    "marker": "https://render.guildwars2.com/file/ABEC80C79576A103EA33EC66FCB99B77291A2F0D/102531.png",
+    "chat_link": "[&amp;DGgAAABLBAAA]"
+  },
+  {
+    "id": "1143-104",
+    "name": "Undying Necropolis",
+    "sector_id": 1355,
+    "type": "Tower",
+    "map_type": "BlueHome",
+    "map_id": 1143,
+    "marker": "https://render.guildwars2.com/file/ABEC80C79576A103EA33EC66FCB99B77291A2F0D/102531.png",
+    "chat_link": "[&amp;DGgAAAB3BAAA]"
+  },
+  {
+    "id": "1102-104",
+    "name": "Deathless Necropolis",
+    "sector_id": 1325,
+    "type": "Tower",
+    "map_type": "GreenHome",
+    "map_id": 1102,
+    "marker": "https://render.guildwars2.com/file/ABEC80C79576A103EA33EC66FCB99B77291A2F0D/102531.png",
+    "chat_link": "[&amp;DGgAAABOBAAA]"
+  },
+  {
+    "id": "1099-105",
+    "name": "Crankshaft Depot",
+    "sector_id": 1354,
+    "type": "Tower",
+    "map_type": "RedHome",
+    "map_id": 1099,
+    "coord": [
+      11256.9,
+      11551.1,
+      -5219.09
+    ],
+    "label_coord": [
+      11264.3,
+      11609.4
+    ],
+    "marker": "https://render.guildwars2.com/file/ABEC80C79576A103EA33EC66FCB99B77291A2F0D/102531.png",
+    "chat_link": "[&amp;DGkAAABLBAAA]"
+  },
+  {
+    "id": "1143-105",
+    "name": "Flywheel Depot",
+    "sector_id": 1332,
+    "type": "Tower",
+    "map_type": "BlueHome",
+    "map_id": 1143,
+    "marker": "https://render.guildwars2.com/file/ABEC80C79576A103EA33EC66FCB99B77291A2F0D/102531.png",
+    "chat_link": "[&amp;DGkAAAB3BAAA]"
+  },
+  {
+    "id": "1102-105",
+    "name": "Sparkplug Depot",
+    "sector_id": 1302,
+    "type": "Tower",
+    "map_type": "GreenHome",
+    "map_id": 1102,
+    "marker": "https://render.guildwars2.com/file/ABEC80C79576A103EA33EC66FCB99B77291A2F0D/102531.png",
+    "chat_link": "[&amp;DGkAAABOBAAA]"
+  },
+  {
+    "id": "1099-106",
+    "name": "Blistering Undercroft",
+    "sector_id": 1351,
+    "type": "Keep",
+    "map_type": "RedHome",
+    "map_id": 1099,
+    "coord": [
+      9327.72,
+      10634.1,
+      -3714.37
+    ],
+    "label_coord": [
+      9854.58,
+      10578.5
+    ],
+    "marker": "https://render.guildwars2.com/file/DB580419C8AD9449309A96C8E7C3D61631020EBB/102535.png",
+    "chat_link": "[&amp;DGoAAABLBAAA]"
+  },
+  {
+    "id": "1143-106",
+    "name": "Torrid Undercroft",
+    "sector_id": 1298,
+    "type": "Keep",
+    "map_type": "BlueHome",
+    "map_id": 1143,
+    "marker": "https://render.guildwars2.com/file/DB580419C8AD9449309A96C8E7C3D61631020EBB/102535.png",
+    "chat_link": "[&amp;DGoAAAB3BAAA]"
+  },
+  {
+    "id": "1102-106",
+    "name": "Scorching Undercroft",
+    "sector_id": 1295,
+    "type": "Keep",
+    "map_type": "GreenHome",
+    "map_id": 1102,
+    "marker": "https://render.guildwars2.com/file/DB580419C8AD9449309A96C8E7C3D61631020EBB/102535.png",
+    "chat_link": "[&amp;DGoAAABOBAAA]"
+  },
+  {
+    "id": "1099-107",
+    "name": "Border",
+    "sector_id": 1311,
+    "type": "Spawn",
+    "map_type": "RedHome",
+    "map_id": 1099,
+    "label_coord": [
+      12022.5,
+      11789.9
+    ],
+    "chat_link": "[&amp;DGsAAABLBAAA]"
+  },
+  {
+    "id": "1143-107",
+    "name": "Border",
+    "sector_id": 1349,
+    "type": "Spawn",
+    "map_type": "BlueHome",
+    "map_id": 1143,
+    "chat_link": "[&amp;DGsAAAB3BAAA]"
+  },
+  {
+    "id": "1102-107",
+    "name": "Border",
+    "sector_id": 1310,
+    "type": "Spawn",
+    "map_type": "GreenHome",
+    "map_id": 1102,
+    "chat_link": "[&amp;DGsAAABOBAAA]"
+  },
+  {
+    "id": "1099-108",
+    "name": "Border",
+    "sector_id": 1350,
+    "type": "Spawn",
+    "map_type": "RedHome",
+    "map_id": 1099,
+    "label_coord": [
+      9641.7,
+      11749.6
+    ],
+    "chat_link": "[&amp;DGwAAABLBAAA]"
+  },
+  {
+    "id": "1143-108",
+    "name": "Border",
+    "sector_id": 1285,
+    "type": "Spawn",
+    "map_type": "BlueHome",
+    "map_id": 1143,
+    "chat_link": "[&amp;DGwAAAB3BAAA]"
+  },
+  {
+    "id": "1102-108",
+    "name": "Border",
+    "sector_id": 1359,
+    "type": "Spawn",
+    "map_type": "GreenHome",
+    "map_id": 1102,
+    "chat_link": "[&amp;DGwAAABOBAAA]"
+  },
+  {
+    "id": "1099-109",
+    "name": "Roy's Refuge",
+    "sector_id": 1322,
+    "type": "Camp",
+    "map_type": "RedHome",
+    "map_id": 1099,
+    "coord": [
+      12100.2,
+      10019.4,
+      -1025.05
+    ],
+    "label_coord": [
+      11954.6,
+      10068.5
+    ],
+    "marker": "https://render.guildwars2.com/file/015D365A08AAE105287A100AAE04529FDAE14155/102532.png",
+    "chat_link": "[&amp;DG0AAABLBAAA]"
+  },
+  {
+    "id": "1143-109",
+    "name": "Olivier's Refuge",
+    "sector_id": 1304,
+    "type": "Camp",
+    "map_type": "BlueHome",
+    "map_id": 1143,
+    "marker": "https://render.guildwars2.com/file/015D365A08AAE105287A100AAE04529FDAE14155/102532.png",
+    "chat_link": "[&amp;DG0AAAB3BAAA]"
+  },
+  {
+    "id": "1102-109",
+    "name": "Norfolk's Refuge",
+    "sector_id": 1290,
+    "type": "Camp",
+    "map_type": "GreenHome",
+    "map_id": 1102,
+    "marker": "https://render.guildwars2.com/file/015D365A08AAE105287A100AAE04529FDAE14155/102532.png",
+    "chat_link": "[&amp;DG0AAABOBAAA]"
+  },
+  {
+    "id": "1099-110",
+    "name": "Parched Outpost",
+    "sector_id": 1277,
+    "type": "Tower",
+    "map_type": "RedHome",
+    "map_id": 1099,
+    "coord": [
+      10243.9,
+      11331.3,
+      -5557.72
+    ],
+    "label_coord": [
+      10255,
+      11576
+    ],
+    "marker": "https://render.guildwars2.com/file/ABEC80C79576A103EA33EC66FCB99B77291A2F0D/102531.png",
+    "chat_link": "[&amp;DG4AAABLBAAA]"
+  },
+  {
+    "id": "1143-110",
+    "name": "Barren Outpost",
+    "sector_id": 1328,
+    "type": "Tower",
+    "map_type": "BlueHome",
+    "map_id": 1143,
+    "marker": "https://render.guildwars2.com/file/ABEC80C79576A103EA33EC66FCB99B77291A2F0D/102531.png",
+    "chat_link": "[&amp;DG4AAAB3BAAA]"
+  },
+  {
+    "id": "1102-110",
+    "name": "Withered Outpost",
+    "sector_id": 1283,
+    "type": "Tower",
+    "map_type": "GreenHome",
+    "map_id": 1102,
+    "marker": "https://render.guildwars2.com/file/ABEC80C79576A103EA33EC66FCB99B77291A2F0D/102531.png",
+    "chat_link": "[&amp;DG4AAABOBAAA]"
+  },
+  {
+    "id": "1099-113",
+    "name": "Stoic Rampart",
+    "sector_id": 1303,
+    "type": "Keep",
+    "map_type": "RedHome",
+    "map_id": 1099,
+    "coord": [
+      10776.6,
+      10120.4,
+      -4120.01
+    ],
+    "label_coord": [
+      10812.3,
+      10102.9
+    ],
+    "marker": "https://render.guildwars2.com/file/DB580419C8AD9449309A96C8E7C3D61631020EBB/102535.png",
+    "chat_link": "[&amp;DHEAAABLBAAA]"
+  },
+  {
+    "id": "1143-113",
+    "name": "Hardened Rampart",
+    "sector_id": 1293,
+    "type": "Keep",
+    "map_type": "BlueHome",
+    "map_id": 1143,
+    "marker": "https://render.guildwars2.com/file/DB580419C8AD9449309A96C8E7C3D61631020EBB/102535.png",
+    "chat_link": "[&amp;DHEAAAB3BAAA]"
+  },
+  {
+    "id": "1102-113",
+    "name": "Impassive Rampart",
+    "sector_id": 1318,
+    "type": "Keep",
+    "map_type": "GreenHome",
+    "map_id": 1102,
+    "marker": "https://render.guildwars2.com/file/DB580419C8AD9449309A96C8E7C3D61631020EBB/102535.png",
+    "chat_link": "[&amp;DHEAAABOBAAA]"
+  },
+  {
+    "id": "1099-114",
+    "name": "Osprey's Palace",
+    "sector_id": 1300,
+    "type": "Keep",
+    "map_type": "RedHome",
+    "map_id": 1099,
+    "coord": [
+      12203,
+      10706.2,
+      -4254.64
+    ],
+    "label_coord": [
+      11788,
+      10660.2
+    ],
+    "marker": "https://render.guildwars2.com/file/DB580419C8AD9449309A96C8E7C3D61631020EBB/102535.png",
+    "chat_link": "[&amp;DHIAAABLBAAA]"
+  },
+  {
+    "id": "1143-114",
+    "name": "Shrike's Palace",
+    "sector_id": 1356,
+    "type": "Keep",
+    "map_type": "BlueHome",
+    "map_id": 1143,
+    "marker": "https://render.guildwars2.com/file/DB580419C8AD9449309A96C8E7C3D61631020EBB/102535.png",
+    "chat_link": "[&amp;DHIAAAB3BAAA]"
+  },
+  {
+    "id": "1102-114",
+    "name": "Harrier's Palace",
+    "sector_id": 1287,
+    "type": "Keep",
+    "map_type": "GreenHome",
+    "map_id": 1102,
+    "marker": "https://render.guildwars2.com/file/DB580419C8AD9449309A96C8E7C3D61631020EBB/102535.png",
+    "chat_link": "[&amp;DHIAAABOBAAA]"
+  },
+  {
+    "id": "1099-115",
+    "name": "Boettiger's Hideaway",
+    "sector_id": 1316,
+    "type": "Camp",
+    "map_type": "RedHome",
+    "map_id": 1099,
+    "coord": [
+      9312.65,
+      9994.26,
+      -1283.43
+    ],
+    "label_coord": [
+      9585.9,
+      10037.1
+    ],
+    "marker": "https://render.guildwars2.com/file/015D365A08AAE105287A100AAE04529FDAE14155/102532.png",
+    "chat_link": "[&amp;DHMAAABLBAAA]"
+  },
+  {
+    "id": "1143-115",
+    "name": "Berdrow's Hideaway",
+    "sector_id": 1357,
+    "type": "Camp",
+    "map_type": "BlueHome",
+    "map_id": 1143,
+    "marker": "https://render.guildwars2.com/file/015D365A08AAE105287A100AAE04529FDAE14155/102532.png",
+    "chat_link": "[&amp;DHMAAAB3BAAA]"
+  },
+  {
+    "id": "1102-115",
+    "name": "Hughe's Hideaway",
+    "sector_id": 1324,
+    "type": "Camp",
+    "map_type": "GreenHome",
+    "map_id": 1102,
+    "marker": "https://render.guildwars2.com/file/015D365A08AAE105287A100AAE04529FDAE14155/102532.png",
+    "chat_link": "[&amp;DHMAAABOBAAA]"
+  },
+  {
+    "id": "1099-116",
+    "name": "Dustwhisper Well",
+    "sector_id": 1296,
+    "type": "Camp",
+    "map_type": "RedHome",
+    "map_id": 1099,
+    "coord": [
+      10747.3,
+      11853.9,
+      -2880.79
+    ],
+    "label_coord": [
+      10773.3,
+      11652.5
+    ],
+    "marker": "https://render.guildwars2.com/file/015D365A08AAE105287A100AAE04529FDAE14155/102532.png",
+    "chat_link": "[&amp;DHQAAABLBAAA]"
+  },
+  {
+    "id": "1143-116",
+    "name": "Lastgasp Well",
+    "sector_id": 1301,
+    "type": "Camp",
+    "map_type": "BlueHome",
+    "map_id": 1143,
+    "marker": "https://render.guildwars2.com/file/015D365A08AAE105287A100AAE04529FDAE14155/102532.png",
+    "chat_link": "[&amp;DHQAAAB3BAAA]"
+  },
+  {
+    "id": "1102-116",
+    "name": "Smashedhope Well",
+    "sector_id": 1338,
+    "type": "Camp",
+    "map_type": "GreenHome",
+    "map_id": 1102,
+    "marker": "https://render.guildwars2.com/file/015D365A08AAE105287A100AAE04529FDAE14155/102532.png",
+    "chat_link": "[&amp;DHQAAABOBAAA]"
+  },
+  {
+    "id": "1099-117",
+    "name": "Citadel",
+    "sector_id": 1343,
+    "type": "Spawn",
+    "map_type": "RedHome",
+    "map_id": 1099,
+    "label_coord": [
+      10590.2,
+      9169.19
+    ],
+    "chat_link": "[&amp;DHUAAABLBAAA]"
+  },
+  {
+    "id": "1143-117",
+    "name": "Citadel",
+    "sector_id": 1279,
+    "type": "Spawn",
+    "map_type": "BlueHome",
+    "map_id": 1143,
+    "chat_link": "[&amp;DHUAAAB3BAAA]"
+  },
+  {
+    "id": "1102-117",
+    "name": "Citadel",
+    "sector_id": 1315,
+    "type": "Spawn",
+    "map_type": "GreenHome",
+    "map_id": 1102,
+    "chat_link": "[&amp;DHUAAABOBAAA]"
+  },
+  {
+    "id": "38-11",
+    "name": "Aldon's Ledge",
+    "sector_id": 882,
+    "type": "Tower",
+    "map_type": "Center",
+    "map_id": 38,
+    "coord": [
+      9413.84,
+      14792.8,
+      -1313.37
+    ],
+    "label_coord": [
+      9383.03,
+      14814
+    ],
+    "marker": "https://render.guildwars2.com/file/ABEC80C79576A103EA33EC66FCB99B77291A2F0D/102531.png",
+    "chat_link": "[&amp;DAsAAAAmAAAA]"
+  },
+  {
+    "id": "38-1",
+    "name": "Overlook",
+    "sector_id": 843,
+    "type": "Keep",
+    "map_type": "Center",
+    "map_id": 38,
+    "coord": [
+      10763.6,
+      13655.8,
+      -2464.89
+    ],
+    "label_coord": [
+      10761.2,
+      13751.9
+    ],
+    "marker": "https://render.guildwars2.com/file/DB580419C8AD9449309A96C8E7C3D61631020EBB/102535.png",
+    "chat_link": "[&amp;DAEAAAAmAAAA]"
+  },
+  {
+    "id": "38-15",
+    "name": "Langor Gulch",
+    "sector_id": 887,
+    "type": "Tower",
+    "map_type": "Center",
+    "map_id": 38,
+    "coord": [
+      11452.7,
+      15490.7,
+      -2246.3
+    ],
+    "label_coord": [
+      11462.5,
+      15600
+    ],
+    "marker": "https://render.guildwars2.com/file/ABEC80C79576A103EA33EC66FCB99B77291A2F0D/102531.png",
+    "chat_link": "[&amp;DA8AAAAmAAAA]"
+  },
+  {
+    "id": "38-3",
+    "name": "Lowlands",
+    "sector_id": 848,
+    "type": "Keep",
+    "map_type": "Center",
+    "map_id": 38,
+    "coord": [
+      9604.47,
+      15129.9,
+      -906.09
+    ],
+    "label_coord": [
+      9869.93,
+      14983.8
+    ],
+    "marker": "https://render.guildwars2.com/file/DB580419C8AD9449309A96C8E7C3D61631020EBB/102535.png",
+    "chat_link": "[&amp;DAMAAAAmAAAA]"
+  },
+  {
+    "id": "38-17",
+    "name": "Mendon's Gap",
+    "sector_id": 890,
+    "type": "Tower",
+    "map_type": "Center",
+    "map_id": 38,
+    "coord": [
+      10256.6,
+      13514.4,
+      -2015.34
+    ],
+    "label_coord": [
+      10168.2,
+      13343.4
+    ],
+    "marker": "https://render.guildwars2.com/file/ABEC80C79576A103EA33EC66FCB99B77291A2F0D/102531.png",
+    "chat_link": "[&amp;DBEAAAAmAAAA]"
+  },
+  {
+    "id": "38-7",
+    "name": "Danelon Passage",
+    "sector_id": 837,
+    "type": "Camp",
+    "map_type": "Center",
+    "map_id": 38,
+    "coord": [
+      11037.9,
+      15556.2,
+      -483.931
+    ],
+    "label_coord": [
+      10996.4,
+      15545.8
+    ],
+    "marker": "https://render.guildwars2.com/file/015D365A08AAE105287A100AAE04529FDAE14155/102532.png",
+    "chat_link": "[&amp;DAcAAAAmAAAA]"
+  },
+  {
+    "id": "38-9",
+    "name": "Stonemist Castle",
+    "sector_id": 833,
+    "type": "Castle",
+    "map_type": "Center",
+    "map_id": 38,
+    "coord": [
+      10605.8,
+      14576.2,
+      -1533.9
+    ],
+    "label_coord": [
+      10627.3,
+      14501.3
+    ],
+    "marker": "https://render.guildwars2.com/file/F0F1DA1C807444F4DF53090343F43BED02E50523/102608.png",
+    "chat_link": "[&amp;DAkAAAAmAAAA]"
+  },
+  {
+    "id": "38-5",
+    "name": "Pangloss Rise",
+    "sector_id": 846,
+    "type": "Camp",
+    "map_type": "Center",
+    "map_id": 38,
+    "coord": [
+      11279.8,
+      13736.8,
+      -835.691
+    ],
+    "label_coord": [
+      11201.6,
+      13718.4
+    ],
+    "marker": "https://render.guildwars2.com/file/015D365A08AAE105287A100AAE04529FDAE14155/102532.png",
+    "chat_link": "[&amp;DAUAAAAmAAAA]"
+  },
+  {
+    "id": "38-21",
+    "name": "Durios Gulch",
+    "sector_id": 888,
+    "type": "Tower",
+    "map_type": "Center",
+    "map_id": 38,
+    "coord": [
+      11156.4,
+      14527.8,
+      -1622.95
+    ],
+    "label_coord": [
+      11207.1,
+      14595
+    ],
+    "marker": "https://render.guildwars2.com/file/ABEC80C79576A103EA33EC66FCB99B77291A2F0D/102531.png",
+    "chat_link": "[&amp;DBUAAAAmAAAA]"
+  },
+  {
+    "id": "38-20",
+    "name": "Veloka Slope",
+    "sector_id": 891,
+    "type": "Tower",
+    "map_type": "Center",
+    "map_id": 38,
+    "coord": [
+      11090.4,
+      13488.2,
+      -2569.23
+    ],
+    "label_coord": [
+      11039.8,
+      13386.6
+    ],
+    "marker": "https://render.guildwars2.com/file/ABEC80C79576A103EA33EC66FCB99B77291A2F0D/102531.png",
+    "chat_link": "[&amp;DBQAAAAmAAAA]"
+  },
+  {
+    "id": "38-14",
+    "name": "Klovan Gully",
+    "sector_id": 884,
+    "type": "Tower",
+    "map_type": "Center",
+    "map_id": 38,
+    "coord": [
+      10171.8,
+      15081.8,
+      -495.673
+    ],
+    "label_coord": [
+      10219.5,
+      15107.6
+    ],
+    "marker": "https://render.guildwars2.com/file/ABEC80C79576A103EA33EC66FCB99B77291A2F0D/102531.png",
+    "chat_link": "[&amp;DA4AAAAmAAAA]"
+  },
+  {
+    "id": "38-13",
+    "name": "Jerrifer's Slough",
+    "sector_id": 883,
+    "type": "Tower",
+    "map_type": "Center",
+    "map_id": 38,
+    "coord": [
+      9805.96,
+      15406.4,
+      -1659.98
+    ],
+    "label_coord": [
+      9764.43,
+      15482.7
+    ],
+    "marker": "https://render.guildwars2.com/file/ABEC80C79576A103EA33EC66FCB99B77291A2F0D/102531.png",
+    "chat_link": "[&amp;DA0AAAAmAAAA]"
+  },
+  {
+    "id": "38-6",
+    "name": "Speldan Clearcut",
+    "sector_id": 844,
+    "type": "Camp",
+    "map_type": "Center",
+    "map_id": 38,
+    "coord": [
+      9841.05,
+      13545.8,
+      -508.295
+    ],
+    "label_coord": [
+      9703.86,
+      13565.7
+    ],
+    "marker": "https://render.guildwars2.com/file/015D365A08AAE105287A100AAE04529FDAE14155/102532.png",
+    "chat_link": "[&amp;DAYAAAAmAAAA]"
+  },
+  {
+    "id": "38-2",
+    "name": "Valley",
+    "sector_id": 834,
+    "type": "Keep",
+    "map_type": "Center",
+    "map_id": 38,
+    "coord": [
+      11489.7,
+      15121.6,
+      -1786.97
+    ],
+    "label_coord": [
+      11282.3,
+      15085.8
+    ],
+    "marker": "https://render.guildwars2.com/file/DB580419C8AD9449309A96C8E7C3D61631020EBB/102535.png",
+    "chat_link": "[&amp;DAIAAAAmAAAA]"
+  },
+  {
+    "id": "38-12",
+    "name": "Wildcreek Run",
+    "sector_id": 885,
+    "type": "Tower",
+    "map_type": "Center",
+    "map_id": 38,
+    "coord": [
+      9906.21,
+      14624.6,
+      -1014.99
+    ],
+    "label_coord": [
+      9958.23,
+      14605.7
+    ],
+    "marker": "https://render.guildwars2.com/file/ABEC80C79576A103EA33EC66FCB99B77291A2F0D/102531.png",
+    "chat_link": "[&amp;DAwAAAAmAAAA]"
+  },
+  {
+    "id": "38-16",
+    "name": "Quentin Lake",
+    "sector_id": 889,
+    "type": "Tower",
+    "map_type": "Center",
+    "map_id": 38,
+    "coord": [
+      10850.1,
+      15224.4,
+      -1052.29
+    ],
+    "label_coord": [
+      10951.8,
+      15121.2
+    ],
+    "marker": "https://render.guildwars2.com/file/ABEC80C79576A103EA33EC66FCB99B77291A2F0D/102531.png",
+    "chat_link": "[&amp;DBAAAAAmAAAA]"
+  },
+  {
+    "id": "38-22",
+    "name": "Bravost Escarpment",
+    "sector_id": 886,
+    "type": "Tower",
+    "map_type": "Center",
+    "map_id": 38,
+    "coord": [
+      11766.3,
+      14793.5,
+      -2133.39
+    ],
+    "label_coord": [
+      11763.5,
+      14850.6
+    ],
+    "marker": "https://render.guildwars2.com/file/ABEC80C79576A103EA33EC66FCB99B77291A2F0D/102531.png",
+    "chat_link": "[&amp;DBYAAAAmAAAA]"
+  },
+  {
+    "id": "38-19",
+    "name": "Ogrewatch Cut",
+    "sector_id": 892,
+    "type": "Tower",
+    "map_type": "Center",
+    "map_id": 38,
+    "coord": [
+      11010.6,
+      13850.3,
+      -1353.35
+    ],
+    "label_coord": [
+      10965,
+      13951
+    ],
+    "marker": "https://render.guildwars2.com/file/ABEC80C79576A103EA33EC66FCB99B77291A2F0D/102531.png",
+    "chat_link": "[&amp;DBMAAAAmAAAA]"
+  },
+  {
+    "id": "38-4",
+    "name": "Golanta Clearing",
+    "sector_id": 849,
+    "type": "Camp",
+    "map_type": "Center",
+    "map_id": 38,
+    "coord": [
+      10202.6,
+      15437.1,
+      -79.961
+    ],
+    "label_coord": [
+      10198.9,
+      15520.2
+    ],
+    "marker": "https://render.guildwars2.com/file/015D365A08AAE105287A100AAE04529FDAE14155/102532.png",
+    "chat_link": "[&amp;DAQAAAAmAAAA]"
+  },
+  {
+    "id": "38-8",
+    "name": "Umberglade Woods",
+    "sector_id": 835,
+    "type": "Camp",
+    "map_type": "Center",
+    "map_id": 38,
+    "coord": [
+      11562.3,
+      14470.3,
+      -302.91
+    ],
+    "label_coord": [
+      11680.9,
+      14353.6
+    ],
+    "marker": "https://render.guildwars2.com/file/015D365A08AAE105287A100AAE04529FDAE14155/102532.png",
+    "chat_link": "[&amp;DAgAAAAmAAAA]"
+  },
+  {
+    "id": "38-10",
+    "name": "Rogue's Quarry",
+    "sector_id": 851,
+    "type": "Camp",
+    "map_type": "Center",
+    "map_id": 38,
+    "coord": [
+      9570.97,
+      14423.2,
+      -700
+    ],
+    "label_coord": [
+      9612.54,
+      14462.8
+    ],
+    "marker": "https://render.guildwars2.com/file/015D365A08AAE105287A100AAE04529FDAE14155/102532.png",
+    "chat_link": "[&amp;DAoAAAAmAAAA]"
+  },
+  {
+    "id": "38-18",
+    "name": "Anzalias Pass",
+    "sector_id": 893,
+    "type": "Tower",
+    "map_type": "Center",
+    "map_id": 38,
+    "coord": [
+      10188.8,
+      14082.3,
+      -1657.95
+    ],
+    "label_coord": [
+      10246.9,
+      13998.3
+    ],
+    "marker": "https://render.guildwars2.com/file/ABEC80C79576A103EA33EC66FCB99B77291A2F0D/102531.png",
+    "chat_link": "[&amp;DBIAAAAmAAAA]"
+  },
+  {
+    "id": "94-62",
+    "name": "Temple of Lost Prayers",
+    "sector_id": 1387,
+    "type": "Ruins",
+    "map_type": "RedHome",
+    "map_id": 94,
+    "marker": "https://render.guildwars2.com/file/1502A342DF603C06910E0F0FFF0C010AC928B946/638725.png",
+    "chat_link": "[&amp;DD4AAABeAAAA]"
+  },
+  {
+    "id": "96-62",
+    "name": "Temple of Lost Prayers",
+    "sector_id": 1381,
+    "type": "Ruins",
+    "map_type": "BlueHome",
+    "map_id": 96,
+    "coord": [
+      14065.1,
+      13339.5,
+      -1168
+    ],
+    "label_coord": [
+      13995,
+      13188
+    ],
+    "marker": "https://render.guildwars2.com/file/1502A342DF603C06910E0F0FFF0C010AC928B946/638725.png",
+    "chat_link": "[&amp;DD4AAABgAAAA]"
+  },
+  {
+    "id": "95-62",
+    "name": "Temple of Lost Prayers",
+    "sector_id": 1376,
+    "type": "Ruins",
+    "map_type": "GreenHome",
+    "map_id": 95,
+    "coord": [
+      6897.13,
+      13979.5,
+      -1168
+    ],
+    "label_coord": [
+      6827.04,
+      13828
+    ],
+    "marker": "https://render.guildwars2.com/file/1502A342DF603C06910E0F0FFF0C010AC928B946/638725.png",
+    "chat_link": "[&amp;DD4AAABfAAAA]"
+  },
+  {
+    "id": "94-35",
+    "name": "Greenbriar",
+    "sector_id": 964,
+    "type": "Tower",
+    "map_type": "RedHome",
+    "map_id": 94,
+    "marker": "https://render.guildwars2.com/file/ABEC80C79576A103EA33EC66FCB99B77291A2F0D/102531.png",
+    "chat_link": "[&amp;DCMAAABeAAAA]"
+  },
+  {
+    "id": "96-35",
+    "name": "Redbriar",
+    "sector_id": 990,
+    "type": "Tower",
+    "map_type": "BlueHome",
+    "map_id": 96,
+    "coord": [
+      13688.9,
+      13339,
+      -1892.9
+    ],
+    "label_coord": [
+      13681.7,
+      13456.7
+    ],
+    "marker": "https://render.guildwars2.com/file/ABEC80C79576A103EA33EC66FCB99B77291A2F0D/102531.png",
+    "chat_link": "[&amp;DCMAAABgAAAA]"
+  },
+  {
+    "id": "95-35",
+    "name": "Bluebriar",
+    "sector_id": 1009,
+    "type": "Tower",
+    "map_type": "GreenHome",
+    "map_id": 95,
+    "coord": [
+      6520.89,
+      13979,
+      -1892.9
+    ],
+    "label_coord": [
+      6513.67,
+      14096.7
+    ],
+    "marker": "https://render.guildwars2.com/file/ABEC80C79576A103EA33EC66FCB99B77291A2F0D/102531.png",
+    "chat_link": "[&amp;DCMAAABfAAAA]"
+  },
+  {
+    "id": "94-103",
+    "name": "Border",
+    "sector_id": 966,
+    "type": "Spawn",
+    "map_type": "RedHome",
+    "map_id": 94,
+    "chat_link": "[&amp;DGcAAABeAAAA]"
+  },
+  {
+    "id": "96-103",
+    "name": "Border",
+    "sector_id": 974,
+    "type": "Spawn",
+    "map_type": "BlueHome",
+    "map_id": 96,
+    "label_coord": [
+      14788.2,
+      14033
+    ],
+    "chat_link": "[&amp;DGcAAABgAAAA]"
+  },
+  {
+    "id": "95-103",
+    "name": "Border",
+    "sector_id": 997,
+    "type": "Spawn",
+    "map_type": "GreenHome",
+    "map_id": 95,
+    "label_coord": [
+      7620.17,
+      14673
+    ],
+    "chat_link": "[&amp;DGcAAABfAAAA]"
+  },
+  {
+    "id": "94-32",
+    "name": "Etheron Hills",
+    "sector_id": 962,
+    "type": "Keep",
+    "map_type": "RedHome",
+    "map_id": 94,
+    "marker": "https://render.guildwars2.com/file/DB580419C8AD9449309A96C8E7C3D61631020EBB/102535.png",
+    "chat_link": "[&amp;DCAAAABeAAAA]"
+  },
+  {
+    "id": "96-32",
+    "name": "Askalion Hills",
+    "sector_id": 979,
+    "type": "Keep",
+    "map_type": "BlueHome",
+    "map_id": 96,
+    "coord": [
+      15254.6,
+      12880.8,
+      -3107.98
+    ],
+    "label_coord": [
+      14821.7,
+      12835.1
+    ],
+    "marker": "https://render.guildwars2.com/file/DB580419C8AD9449309A96C8E7C3D61631020EBB/102535.png",
+    "chat_link": "[&amp;DCAAAABgAAAA]"
+  },
+  {
+    "id": "95-32",
+    "name": "Shadaran Hills",
+    "sector_id": 996,
+    "type": "Keep",
+    "map_type": "GreenHome",
+    "map_id": 95,
+    "coord": [
+      8086.65,
+      13520.8,
+      -3107.98
+    ],
+    "label_coord": [
+      7653.67,
+      13475.1
+    ],
+    "marker": "https://render.guildwars2.com/file/DB580419C8AD9449309A96C8E7C3D61631020EBB/102535.png",
+    "chat_link": "[&amp;DCAAAABfAAAA]"
+  },
+  {
+    "id": "94-33",
+    "name": "Dreaming Bay",
+    "sector_id": 957,
+    "type": "Keep",
+    "map_type": "RedHome",
+    "map_id": 94,
+    "marker": "https://render.guildwars2.com/file/DB580419C8AD9449309A96C8E7C3D61631020EBB/102535.png",
+    "chat_link": "[&amp;DCEAAABeAAAA]"
+  },
+  {
+    "id": "96-33",
+    "name": "Ascension Bay",
+    "sector_id": 973,
+    "type": "Keep",
+    "map_type": "BlueHome",
+    "map_id": 96,
+    "coord": [
+      13035.1,
+      12956.6,
+      -300.694
+    ],
+    "label_coord": [
+      13199.1,
+      12867.8
+    ],
+    "marker": "https://render.guildwars2.com/file/DB580419C8AD9449309A96C8E7C3D61631020EBB/102535.png",
+    "chat_link": "[&amp;DCEAAABgAAAA]"
+  },
+  {
+    "id": "95-33",
+    "name": "Dreadfall Bay",
+    "sector_id": 999,
+    "type": "Keep",
+    "map_type": "GreenHome",
+    "map_id": 95,
+    "coord": [
+      5867.06,
+      13596.6,
+      -300.694
+    ],
+    "label_coord": [
+      6031.09,
+      13507.8
+    ],
+    "marker": "https://render.guildwars2.com/file/DB580419C8AD9449309A96C8E7C3D61631020EBB/102535.png",
+    "chat_link": "[&amp;DCEAAABfAAAA]"
+  },
+  {
+    "id": "94-65",
+    "name": "Orchard Overlook",
+    "sector_id": 1375,
+    "type": "Ruins",
+    "map_type": "RedHome",
+    "map_id": 94,
+    "marker": "https://render.guildwars2.com/file/7DD0BD0DEC0F18B2D70775F9BCF4C7080DCC0BB1/638722.png",
+    "chat_link": "[&amp;DEEAAABeAAAA]"
+  },
+  {
+    "id": "96-65",
+    "name": "Orchard Overlook",
+    "sector_id": 1384,
+    "type": "Ruins",
+    "map_type": "BlueHome",
+    "map_id": 96,
+    "coord": [
+      14327.1,
+      12757,
+      -711
+    ],
+    "label_coord": [
+      14256.6,
+      12815.5
+    ],
+    "marker": "https://render.guildwars2.com/file/7DD0BD0DEC0F18B2D70775F9BCF4C7080DCC0BB1/638722.png",
+    "chat_link": "[&amp;DEEAAABgAAAA]"
+  },
+  {
+    "id": "95-65",
+    "name": "Orchard Overlook",
+    "sector_id": 1377,
+    "type": "Ruins",
+    "map_type": "GreenHome",
+    "map_id": 95,
+    "coord": [
+      7159.09,
+      13397,
+      -711
+    ],
+    "label_coord": [
+      7088.59,
+      13455.5
+    ],
+    "marker": "https://render.guildwars2.com/file/7DD0BD0DEC0F18B2D70775F9BCF4C7080DCC0BB1/638722.png",
+    "chat_link": "[&amp;DEEAAABfAAAA]"
+  },
+  {
+    "id": "94-38",
+    "name": "Longview",
+    "sector_id": 955,
+    "type": "Tower",
+    "map_type": "RedHome",
+    "map_id": 94,
+    "marker": "https://render.guildwars2.com/file/ABEC80C79576A103EA33EC66FCB99B77291A2F0D/102531.png",
+    "chat_link": "[&amp;DCYAAABeAAAA]"
+  },
+  {
+    "id": "96-38",
+    "name": "Woodhaven",
+    "sector_id": 988,
+    "type": "Tower",
+    "map_type": "BlueHome",
+    "map_id": 96,
+    "coord": [
+      13444.8,
+      12078.2,
+      -3758.65
+    ],
+    "label_coord": [
+      13381.5,
+      11876.7
+    ],
+    "marker": "https://render.guildwars2.com/file/ABEC80C79576A103EA33EC66FCB99B77291A2F0D/102531.png",
+    "chat_link": "[&amp;DCYAAABgAAAA]"
+  },
+  {
+    "id": "95-38",
+    "name": "Sunnyhill",
+    "sector_id": 1007,
+    "type": "Tower",
+    "map_type": "GreenHome",
+    "map_id": 95,
+    "coord": [
+      6276.77,
+      12718.2,
+      -3758.65
+    ],
+    "label_coord": [
+      6213.52,
+      12516.7
+    ],
+    "marker": "https://render.guildwars2.com/file/ABEC80C79576A103EA33EC66FCB99B77291A2F0D/102531.png",
+    "chat_link": "[&amp;DCYAAABfAAAA]"
+  },
+  {
+    "id": "94-39",
+    "name": "The Godsword",
+    "sector_id": 953,
+    "type": "Camp",
+    "map_type": "RedHome",
+    "map_id": 94,
+    "marker": "https://render.guildwars2.com/file/015D365A08AAE105287A100AAE04529FDAE14155/102532.png",
+    "chat_link": "[&amp;DCcAAABeAAAA]"
+  },
+  {
+    "id": "96-39",
+    "name": "The Spiritholme",
+    "sector_id": 978,
+    "type": "Camp",
+    "map_type": "BlueHome",
+    "map_id": 96,
+    "coord": [
+      14082.6,
+      11228.3,
+      -3677.6
+    ],
+    "label_coord": [
+      14101.9,
+      11133
+    ],
+    "marker": "https://render.guildwars2.com/file/015D365A08AAE105287A100AAE04529FDAE14155/102532.png",
+    "chat_link": "[&amp;DCcAAABgAAAA]"
+  },
+  {
+    "id": "95-39",
+    "name": "The Titanpaw",
+    "sector_id": 998,
+    "type": "Camp",
+    "map_type": "GreenHome",
+    "map_id": 95,
+    "coord": [
+      6914.61,
+      11868.3,
+      -3677.6
+    ],
+    "label_coord": [
+      6933.92,
+      11773
+    ],
+    "marker": "https://render.guildwars2.com/file/015D365A08AAE105287A100AAE04529FDAE14155/102532.png",
+    "chat_link": "[&amp;DCcAAABfAAAA]"
+  },
+  {
+    "id": "94-64",
+    "name": "Bauer's Estate",
+    "sector_id": 1379,
+    "type": "Ruins",
+    "map_type": "RedHome",
+    "map_id": 94,
+    "marker": "https://render.guildwars2.com/file/1B2FFE9A59B60110BEF42744A10B433AACE008FF/638714.png",
+    "chat_link": "[&amp;DEAAAABeAAAA]"
+  },
+  {
+    "id": "96-64",
+    "name": "Bauer's Estate",
+    "sector_id": 1374,
+    "type": "Ruins",
+    "map_type": "BlueHome",
+    "map_id": 96,
+    "coord": [
+      13859.2,
+      12703.1,
+      -393
+    ],
+    "label_coord": [
+      13894.4,
+      12807
+    ],
+    "marker": "https://render.guildwars2.com/file/1B2FFE9A59B60110BEF42744A10B433AACE008FF/638714.png",
+    "chat_link": "[&amp;DEAAAABgAAAA]"
+  },
+  {
+    "id": "95-64",
+    "name": "Bauer's Estate",
+    "sector_id": 1388,
+    "type": "Ruins",
+    "map_type": "GreenHome",
+    "map_id": 95,
+    "coord": [
+      6691.21,
+      13343.1,
+      -393
+    ],
+    "label_coord": [
+      6726.36,
+      13447
+    ],
+    "marker": "https://render.guildwars2.com/file/1B2FFE9A59B60110BEF42744A10B433AACE008FF/638714.png",
+    "chat_link": "[&amp;DEAAAABfAAAA]"
+  },
+  {
+    "id": "94-37",
+    "name": "Garrison",
+    "sector_id": 952,
+    "type": "Keep",
+    "map_type": "RedHome",
+    "map_id": 94,
+    "marker": "https://render.guildwars2.com/file/DB580419C8AD9449309A96C8E7C3D61631020EBB/102535.png",
+    "chat_link": "[&amp;DCUAAABeAAAA]"
+  },
+  {
+    "id": "96-37",
+    "name": "Garrison",
+    "sector_id": 976,
+    "type": "Keep",
+    "map_type": "BlueHome",
+    "map_id": 96,
+    "coord": [
+      14054.3,
+      12435.6,
+      -2800.76
+    ],
+    "label_coord": [
+      14098.4,
+      12372.6
+    ],
+    "marker": "https://render.guildwars2.com/file/DB580419C8AD9449309A96C8E7C3D61631020EBB/102535.png",
+    "chat_link": "[&amp;DCUAAABgAAAA]"
+  },
+  {
+    "id": "95-37",
+    "name": "Garrison",
+    "sector_id": 992,
+    "type": "Keep",
+    "map_type": "GreenHome",
+    "map_id": 95,
+    "coord": [
+      6886.26,
+      13075.6,
+      -2800.76
+    ],
+    "label_coord": [
+      6930.39,
+      13012.6
+    ],
+    "marker": "https://render.guildwars2.com/file/DB580419C8AD9449309A96C8E7C3D61631020EBB/102535.png",
+    "chat_link": "[&amp;DCUAAABfAAAA]"
+  },
+  {
+    "id": "94-53",
+    "name": "Greenvale Refuge",
+    "sector_id": 971,
+    "type": "Camp",
+    "map_type": "RedHome",
+    "map_id": 94,
+    "marker": "https://render.guildwars2.com/file/015D365A08AAE105287A100AAE04529FDAE14155/102532.png",
+    "chat_link": "[&amp;DDUAAABeAAAA]"
+  },
+  {
+    "id": "96-53",
+    "name": "Redvale Refuge",
+    "sector_id": 985,
+    "type": "Camp",
+    "map_type": "BlueHome",
+    "map_id": 96,
+    "coord": [
+      13258.4,
+      13453.9,
+      -687.909
+    ],
+    "label_coord": [
+      13233.9,
+      13476.9
+    ],
+    "marker": "https://render.guildwars2.com/file/015D365A08AAE105287A100AAE04529FDAE14155/102532.png",
+    "chat_link": "[&amp;DDUAAABgAAAA]"
+  },
+  {
+    "id": "95-53",
+    "name": "Bluevale Refuge",
+    "sector_id": 1005,
+    "type": "Camp",
+    "map_type": "GreenHome",
+    "map_id": 95,
+    "coord": [
+      6090.42,
+      14093.9,
+      -687.909
+    ],
+    "label_coord": [
+      6065.92,
+      14116.9
+    ],
+    "marker": "https://render.guildwars2.com/file/015D365A08AAE105287A100AAE04529FDAE14155/102532.png",
+    "chat_link": "[&amp;DDUAAABfAAAA]"
+  },
+  {
+    "id": "94-111",
+    "name": "Citadel",
+    "sector_id": 941,
+    "type": "Spawn",
+    "map_type": "RedHome",
+    "map_id": 94,
+    "chat_link": "[&amp;DG8AAABeAAAA]"
+  },
+  {
+    "id": "96-111",
+    "name": "Citadel",
+    "sector_id": 980,
+    "type": "Spawn",
+    "map_type": "BlueHome",
+    "map_id": 96,
+    "label_coord": [
+      13976.5,
+      11618.3
+    ],
+    "chat_link": "[&amp;DG8AAABgAAAA]"
+  },
+  {
+    "id": "95-111",
+    "name": "Citadel",
+    "sector_id": 993,
+    "type": "Spawn",
+    "map_type": "GreenHome",
+    "map_id": 95,
+    "label_coord": [
+      6808.51,
+      12258.3
+    ],
+    "chat_link": "[&amp;DG8AAABfAAAA]"
+  },
+  {
+    "id": "94-112",
+    "name": "Border",
+    "sector_id": 967,
+    "type": "Spawn",
+    "map_type": "RedHome",
+    "map_id": 94,
+    "chat_link": "[&amp;DHAAAABeAAAA]"
+  },
+  {
+    "id": "96-112",
+    "name": "Border",
+    "sector_id": 977,
+    "type": "Spawn",
+    "map_type": "BlueHome",
+    "map_id": 96,
+    "label_coord": [
+      13366.9,
+      13993
+    ],
+    "chat_link": "[&amp;DHAAAABgAAAA]"
+  },
+  {
+    "id": "95-112",
+    "name": "Border",
+    "sector_id": 1000,
+    "type": "Spawn",
+    "map_type": "GreenHome",
+    "map_id": 95,
+    "label_coord": [
+      6198.94,
+      14633
+    ],
+    "chat_link": "[&amp;DHAAAABfAAAA]"
+  },
+  {
+    "id": "94-52",
+    "name": "Arah's Hope",
+    "sector_id": 956,
+    "type": "Camp",
+    "map_type": "RedHome",
+    "map_id": 94,
+    "marker": "https://render.guildwars2.com/file/015D365A08AAE105287A100AAE04529FDAE14155/102532.png",
+    "chat_link": "[&amp;DDQAAABeAAAA]"
+  },
+  {
+    "id": "96-52",
+    "name": "Godslore",
+    "sector_id": 991,
+    "type": "Camp",
+    "map_type": "BlueHome",
+    "map_id": 96,
+    "coord": [
+      13220.6,
+      12199.2,
+      -35.3346
+    ],
+    "label_coord": [
+      13373.4,
+      12338.7
+    ],
+    "marker": "https://render.guildwars2.com/file/015D365A08AAE105287A100AAE04529FDAE14155/102532.png",
+    "chat_link": "[&amp;DDQAAABgAAAA]"
+  },
+  {
+    "id": "95-52",
+    "name": "Faithleap",
+    "sector_id": 1010,
+    "type": "Camp",
+    "map_type": "GreenHome",
+    "map_id": 95,
+    "coord": [
+      6052.58,
+      12839.2,
+      -35.3346
+    ],
+    "label_coord": [
+      6205.41,
+      12978.7
+    ],
+    "marker": "https://render.guildwars2.com/file/015D365A08AAE105287A100AAE04529FDAE14155/102532.png",
+    "chat_link": "[&amp;DDQAAABfAAAA]"
+  },
+  {
+    "id": "94-51",
+    "name": "Astralholme",
+    "sector_id": 960,
+    "type": "Camp",
+    "map_type": "RedHome",
+    "map_id": 94,
+    "marker": "https://render.guildwars2.com/file/015D365A08AAE105287A100AAE04529FDAE14155/102532.png",
+    "chat_link": "[&amp;DDMAAABeAAAA]"
+  },
+  {
+    "id": "96-51",
+    "name": "Stargrove",
+    "sector_id": 986,
+    "type": "Camp",
+    "map_type": "BlueHome",
+    "map_id": 96,
+    "coord": [
+      15031.9,
+      12135.5,
+      -1533.33
+    ],
+    "label_coord": [
+      15090.9,
+      12201.7
+    ],
+    "marker": "https://render.guildwars2.com/file/015D365A08AAE105287A100AAE04529FDAE14155/102532.png",
+    "chat_link": "[&amp;DDMAAABgAAAA]"
+  },
+  {
+    "id": "95-51",
+    "name": "Foghaven",
+    "sector_id": 995,
+    "type": "Camp",
+    "map_type": "GreenHome",
+    "map_id": 95,
+    "coord": [
+      7863.85,
+      12775.5,
+      -1533.33
+    ],
+    "label_coord": [
+      7922.89,
+      12841.7
+    ],
+    "marker": "https://render.guildwars2.com/file/015D365A08AAE105287A100AAE04529FDAE14155/102532.png",
+    "chat_link": "[&amp;DDMAAABfAAAA]"
+  },
+  {
+    "id": "94-66",
+    "name": "Carver's Ascent",
+    "sector_id": 1385,
+    "type": "Ruins",
+    "map_type": "RedHome",
+    "map_id": 94,
+    "marker": "https://render.guildwars2.com/file/9CA7DFB4B46C231B6C5B2BDEE04B0459340D64B3/638717.png",
+    "chat_link": "[&amp;DEIAAABeAAAA]"
+  },
+  {
+    "id": "96-66",
+    "name": "Carver's Ascent",
+    "sector_id": 1382,
+    "type": "Ruins",
+    "map_type": "BlueHome",
+    "map_id": 96,
+    "coord": [
+      14362.3,
+      13112.1,
+      -2742
+    ],
+    "label_coord": [
+      14235.2,
+      13068.6
+    ],
+    "marker": "https://render.guildwars2.com/file/9CA7DFB4B46C231B6C5B2BDEE04B0459340D64B3/638717.png",
+    "chat_link": "[&amp;DEIAAABgAAAA]"
+  },
+  {
+    "id": "95-66",
+    "name": "Carver's Ascent",
+    "sector_id": 1380,
+    "type": "Ruins",
+    "map_type": "GreenHome",
+    "map_id": 95,
+    "coord": [
+      7194.27,
+      13752.1,
+      -2742
+    ],
+    "label_coord": [
+      7067.25,
+      13708.6
+    ],
+    "marker": "https://render.guildwars2.com/file/9CA7DFB4B46C231B6C5B2BDEE04B0459340D64B3/638717.png",
+    "chat_link": "[&amp;DEIAAABfAAAA]"
+  },
+  {
+    "id": "94-34",
+    "name": "Victor's Lodge",
+    "sector_id": 963,
+    "type": "Camp",
+    "map_type": "RedHome",
+    "map_id": 94,
+    "marker": "https://render.guildwars2.com/file/015D365A08AAE105287A100AAE04529FDAE14155/102532.png",
+    "chat_link": "[&amp;DCIAAABeAAAA]"
+  },
+  {
+    "id": "96-34",
+    "name": "Champion's Demesne",
+    "sector_id": 984,
+    "type": "Camp",
+    "map_type": "BlueHome",
+    "map_id": 96,
+    "coord": [
+      14081,
+      14020,
+      -307.1
+    ],
+    "label_coord": [
+      14094.8,
+      13918
+    ],
+    "marker": "https://render.guildwars2.com/file/015D365A08AAE105287A100AAE04529FDAE14155/102532.png",
+    "chat_link": "[&amp;DCIAAABgAAAA]"
+  },
+  {
+    "id": "95-34",
+    "name": "Hero's Lodge",
+    "sector_id": 1004,
+    "type": "Camp",
+    "map_type": "GreenHome",
+    "map_id": 95,
+    "coord": [
+      6913,
+      14660,
+      -307.1
+    ],
+    "label_coord": [
+      6926.8,
+      14558
+    ],
+    "marker": "https://render.guildwars2.com/file/015D365A08AAE105287A100AAE04529FDAE14155/102532.png",
+    "chat_link": "[&amp;DCIAAABfAAAA]"
+  },
+  {
+    "id": "94-36",
+    "name": "Bluelake",
+    "sector_id": 965,
+    "type": "Tower",
+    "map_type": "RedHome",
+    "map_id": 94,
+    "marker": "https://render.guildwars2.com/file/ABEC80C79576A103EA33EC66FCB99B77291A2F0D/102531.png",
+    "chat_link": "[&amp;DCQAAABeAAAA]"
+  },
+  {
+    "id": "96-36",
+    "name": "Greenlake",
+    "sector_id": 989,
+    "type": "Tower",
+    "map_type": "BlueHome",
+    "map_id": 96,
+    "coord": [
+      14581,
+      13409.9,
+      -1821.91
+    ],
+    "label_coord": [
+      14429,
+      13544.3
+    ],
+    "marker": "https://render.guildwars2.com/file/ABEC80C79576A103EA33EC66FCB99B77291A2F0D/102531.png",
+    "chat_link": "[&amp;DCQAAABgAAAA]"
+  },
+  {
+    "id": "95-36",
+    "name": "Redlake",
+    "sector_id": 1008,
+    "type": "Tower",
+    "map_type": "GreenHome",
+    "map_id": 95,
+    "coord": [
+      7413.05,
+      14049.9,
+      -1821.91
+    ],
+    "label_coord": [
+      7260.99,
+      14184.3
+    ],
+    "marker": "https://render.guildwars2.com/file/ABEC80C79576A103EA33EC66FCB99B77291A2F0D/102531.png",
+    "chat_link": "[&amp;DCQAAABfAAAA]"
+  },
+  {
+    "id": "94-50",
+    "name": "Bluewater Lowlands",
+    "sector_id": 972,
+    "type": "Camp",
+    "map_type": "RedHome",
+    "map_id": 94,
+    "marker": "https://render.guildwars2.com/file/015D365A08AAE105287A100AAE04529FDAE14155/102532.png",
+    "chat_link": "[&amp;DDIAAABeAAAA]"
+  },
+  {
+    "id": "96-50",
+    "name": "Greenwater Lowlands",
+    "sector_id": 983,
+    "type": "Camp",
+    "map_type": "BlueHome",
+    "map_id": 96,
+    "coord": [
+      15020.9,
+      13500.9,
+      -10.3619
+    ],
+    "label_coord": [
+      15046.3,
+      13490.9
+    ],
+    "marker": "https://render.guildwars2.com/file/015D365A08AAE105287A100AAE04529FDAE14155/102532.png",
+    "chat_link": "[&amp;DDIAAABgAAAA]"
+  },
+  {
+    "id": "95-50",
+    "name": "Redwater Lowlands",
+    "sector_id": 1003,
+    "type": "Camp",
+    "map_type": "GreenHome",
+    "map_id": 95,
+    "coord": [
+      7852.9,
+      14140.9,
+      -10.3619
+    ],
+    "label_coord": [
+      7878.35,
+      14130.9
+    ],
+    "marker": "https://render.guildwars2.com/file/015D365A08AAE105287A100AAE04529FDAE14155/102532.png",
+    "chat_link": "[&amp;DDIAAABfAAAA]"
+  },
+  {
+    "id": "94-63",
+    "name": "Battle's Hollow",
+    "sector_id": 1378,
+    "type": "Ruins",
+    "map_type": "RedHome",
+    "map_id": 94,
+    "marker": "https://render.guildwars2.com/file/F621AEFE09A7261D4796070D0F022FB0AEEE4814/638709.png",
+    "chat_link": "[&amp;DD8AAABeAAAA]"
+  },
+  {
+    "id": "96-63",
+    "name": "Battle's Hollow",
+    "sector_id": 1386,
+    "type": "Ruins",
+    "map_type": "BlueHome",
+    "map_id": 96,
+    "coord": [
+      13761,
+      13074.7,
+      -0.649902
+    ],
+    "label_coord": [
+      13776.4,
+      13008.6
+    ],
+    "marker": "https://render.guildwars2.com/file/F621AEFE09A7261D4796070D0F022FB0AEEE4814/638709.png",
+    "chat_link": "[&amp;DD8AAABgAAAA]"
+  },
+  {
+    "id": "95-63",
+    "name": "Battle's Hollow",
+    "sector_id": 1383,
+    "type": "Ruins",
+    "map_type": "GreenHome",
+    "map_id": 95,
+    "coord": [
+      6593,
+      13714.7,
+      -0.649902
+    ],
+    "label_coord": [
+      6608.37,
+      13648.6
+    ],
+    "marker": "https://render.guildwars2.com/file/F621AEFE09A7261D4796070D0F022FB0AEEE4814/638709.png",
+    "chat_link": "[&amp;DD8AAABfAAAA]"
+  },
+  {
+    "id": "94-40",
+    "name": "Cliffside",
+    "sector_id": 959,
+    "type": "Tower",
+    "map_type": "RedHome",
+    "map_id": 94,
+    "marker": "https://render.guildwars2.com/file/ABEC80C79576A103EA33EC66FCB99B77291A2F0D/102531.png",
+    "chat_link": "[&amp;DCgAAABeAAAA]"
+  },
+  {
+    "id": "96-40",
+    "name": "Dawn's Eyrie",
+    "sector_id": 987,
+    "type": "Tower",
+    "map_type": "BlueHome",
+    "map_id": 96,
+    "coord": [
+      14683.4,
+      12030.3,
+      -4839.9
+    ],
+    "label_coord": [
+      14533.3,
+      12147.5
+    ],
+    "marker": "https://render.guildwars2.com/file/ABEC80C79576A103EA33EC66FCB99B77291A2F0D/102531.png",
+    "chat_link": "[&amp;DCgAAABgAAAA]"
+  },
+  {
+    "id": "95-40",
+    "name": "Cragtop",
+    "sector_id": 1006,
+    "type": "Tower",
+    "map_type": "GreenHome",
+    "map_id": 95,
+    "coord": [
+      7515.42,
+      12670.3,
+      -4839.9
+    ],
+    "label_coord": [
+      7365.3,
+      12787.5
+    ],
+    "marker": "https://render.guildwars2.com/file/ABEC80C79576A103EA33EC66FCB99B77291A2F0D/102531.png",
+    "chat_link": "[&amp;DCgAAABfAAAA]"
+  }
+]</value>
+    <comment>Json content containing all objective details from GW2 API.</comment>
+  </data>
   <data name="AllWorldsJson" xml:space="preserve">
     <value>[
 

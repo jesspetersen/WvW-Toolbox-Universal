@@ -1,4 +1,5 @@
 ﻿using Android.Util;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -57,6 +58,75 @@ namespace WvW_Toolbox.utilities
             }
 
             return objectiveCount;
+        }
+
+        //Method to search keeps that belong to each server
+        //Return multidimensional array or list of lists
+
+        public static List<List<objects.Objective>> SortObjectivesByMap()
+        {
+            List<objects.Objective> redHome = new List<objects.Objective>();
+            List<objects.Objective> greenHome = new List<objects.Objective>();
+            List<objects.Objective> blueHome = new List<objects.Objective>();
+            List<objects.Objective> EBG = new List<objects.Objective>();
+
+            foreach (JsonObjective j in JsonConvert.DeserializeObject<List<JsonObjective>>(Properties.Resources.AllObjectivesJson))
+            {
+                objects.Objective g = Global.allObjectives.Single(x => Convert.ToInt32(x.id) == Convert.ToInt32(j.id));
+                objects.Objective o = new objects.Objective(j.id, j.type, g.owner);
+
+                if (j.mapType == "RedHome")
+                    redHome.Add(o);
+                else if (j.mapType == "BlueHome")
+                    blueHome.Add(o);
+                else if (j.mapType == "GreenHome")
+                    greenHome.Add(o);
+                else if (j.mapType == "Center")
+                    EBG.Add(o);
+            }
+
+            List<List<objects.Objective>> mapsOfObjectives = new List<List<objects.Objective>>();
+            mapsOfObjectives.Add(redHome);
+            mapsOfObjectives.Add(greenHome);
+            mapsOfObjectives.Add(blueHome);
+            mapsOfObjectives.Add(EBG);
+
+            return mapsOfObjectives;
+        }
+
+        //Helpers for deserializing objectives
+
+        public class JsonObjective
+        {
+            [JsonProperty("id")]
+            public string id { get; set; }
+
+            [JsonProperty("name")]
+            public string name { get; set; }
+
+            [JsonProperty("sector_id")]
+            public string sectorID { get; set; }
+
+            [JsonProperty("type")]
+            public string type { get; set; }
+
+            [JsonProperty("map_type")]
+            public string mapType { get; set; }
+
+            [JsonProperty("map_id")]
+            public string mapID { get; set; }
+
+            [JsonProperty("coord")]
+            public string[] coord { get; set; }
+
+            [JsonProperty("label_coord")]
+            public string[] labelCoord { get; set; }
+
+            [JsonProperty("marker")]
+            public string marker { get; set; }
+
+            [JsonProperty("chat_link")]
+            public string chatLink { get; set; }
         }
     }
 }

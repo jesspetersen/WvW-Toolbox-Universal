@@ -63,6 +63,39 @@ namespace WvW_Toolbox.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to [
+        ///  {
+        ///    &quot;id&quot;: &quot;1099-99&quot;,
+        ///    &quot;name&quot;: &quot;Hamm&apos;s Lab&quot;,
+        ///    &quot;sector_id&quot;: 1314,
+        ///    &quot;type&quot;: &quot;Camp&quot;,
+        ///    &quot;map_type&quot;: &quot;RedHome&quot;,
+        ///    &quot;map_id&quot;: 1099,
+        ///    &quot;coord&quot;: [
+        ///      10743.8,
+        ///      9492.51,
+        ///      -2955
+        ///    ],
+        ///    &quot;label_coord&quot;: [
+        ///      10864,
+        ///      9559.49
+        ///    ],
+        ///    &quot;marker&quot;: &quot;https://render.guildwars2.com/file/015D365A08AAE105287A100AAE04529FDAE14155/102532.png&quot;,
+        ///    &quot;chat_link&quot;: &quot;[&amp;DGMAAABLBAAA]&quot;
+        ///  },
+        ///  {
+        ///    &quot;id&quot;: &quot;1143-99&quot;,
+        ///    &quot;name&quot;: &quot;Zakk&apos;s Lab&quot;,
+        ///    &quot;sector_id&quot;: 1358,
+        ///    &quot;typ [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string AllObjectivesJson {
+            get {
+                return ResourceManager.GetString("AllObjectivesJson", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [
         ///
         ///    {
         ///      &quot;id&quot;: 1001,
