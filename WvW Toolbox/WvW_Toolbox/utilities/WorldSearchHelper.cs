@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 
 namespace WvW_Toolbox.utilities
@@ -18,6 +19,21 @@ namespace WvW_Toolbox.utilities
             }
 
             return worldList;
+        }
+
+        public static objects.World FindWorldById(int id)
+        {
+            List<objects.World> worlds = ListAllWorlds();
+            objects.World placeholderWorld = new objects.World("", "", "");
+            foreach (objects.World w in worlds)
+            {
+                if (w.id == Convert.ToString(id))
+                {
+                    return w;
+                }
+            }
+
+            return placeholderWorld;
         }
     }
 

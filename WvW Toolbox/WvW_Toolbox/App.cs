@@ -14,17 +14,20 @@ namespace WvW_Toolbox
             //http://www.kymphillpotts.com/common-ui-patterns-in-xamarin-forms-part-2-tabbed-pages/
             // tabbed page 
             var tabContainer = new TabbedPage();
-            tabContainer.Children.Add(new pages.ResetTimerPage() { Title = "Countdown" });
+            tabContainer.Children.Add(new pages.ResetTimerPage() { Title = "Count Down" });
             tabContainer.Children.Add(new pages.RankCalcPage() { Title = "Ranks" });
+            tabContainer.Children.Add(new pages.MatchMonitorPage() { Title = "Match" });
             tabContainer.Children.Add(new pages.SettingsPage() { Title = "Settings" });
 
             // The root page of your application
             MainPage = tabContainer;
+            
         }
 
         protected override void OnStart()
         {
             // Handle when your app starts
+            utilities.MatchHelper.GetAsyncContent();
         }
 
         protected override void OnSleep()
@@ -35,6 +38,7 @@ namespace WvW_Toolbox
         protected override void OnResume()
         {
             // Handle when your app resumes
+            utilities.MatchHelper.GetAsyncContent();
         }
     }
 }
