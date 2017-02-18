@@ -11,18 +11,13 @@ namespace WvW_Toolbox.objects
         public string id { get; set; }
         public string type { get; set; }
         public string owner { get; set; }
+        public string name { get; set; }
 
         public Objective(string id, string type, string owner)
         {
             this.id = id;
             this.type = type;
             this.owner = owner;
-        }
-
-        public Objective(string id, string type)
-        {
-            this.id = id;
-            this.type = type;
         }
     }
 }
