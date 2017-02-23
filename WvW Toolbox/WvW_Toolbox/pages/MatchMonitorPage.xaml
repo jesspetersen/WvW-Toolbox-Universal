@@ -18,23 +18,134 @@
           </Grid.ColumnDefinitions>
           <Grid.RowDefinitions>
             <RowDefinition Height="50"></RowDefinition>
-            <RowDefinition Height="50"></RowDefinition>
-            <RowDefinition Height="50"></RowDefinition>
+          </Grid.RowDefinitions>
+          <Image Source="castle.png" Grid.Column="0" Grid.Row="0">
+            <Image.GestureRecognizers>
+              <TapGestureRecognizer
+                      Tapped="RedCastle_Clicked"
+                      NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+          </Image>
+          <Label Text="Castles" YAlign="Center" Grid.Column="1" Grid.Row="0" XAlign="Center">
+            <Label.GestureRecognizers>
+              <TapGestureRecognizer
+                      Tapped="RedCastle_Clicked"
+                      NumberOfTapsRequired="1" />
+            </Label.GestureRecognizers>
+          </Label>
+          <Label x:Name="RedCastlesLabel" TextColor="Red" FontAttributes="Bold" XAlign="Center" YAlign="Center" Text="1" Grid.Column="2" Grid.Row="0">
+            <Label.GestureRecognizers>
+              <TapGestureRecognizer
+                      Tapped="RedCastle_Clicked"
+                      NumberOfTapsRequired="1" />
+            </Label.GestureRecognizers>
+          </Label>
+        </Grid>
+      <StackLayout Orientation="Vertical" x:Name="RedCastlesDetail" IsVisible="false">
+        <Grid x:Name="RedCastlesGrid"></Grid>
+      </StackLayout>
+      <Grid>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="80"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+          </Grid.ColumnDefinitions>
+          <Grid.RowDefinitions>
             <RowDefinition Height="50"></RowDefinition>
           </Grid.RowDefinitions>
-          <Image Source="castle.png" Grid.Column="0" Grid.Row="0"></Image>
-          <Label Text="Castles" YAlign="Center" Grid.Column="1" Grid.Row="0" XAlign="Center" />
-          <Label x:Name="RedCastlesLabel" TextColor="Red" FontAttributes="Bold" XAlign="Center" YAlign="Center" Text="1" Grid.Column="2" Grid.Row="0" />
-          <Image Source="keep.png" Grid.Column="0" Grid.Row="1"></Image>
-          <Label Text="Keeps" YAlign="Center" Grid.Column="1" Grid.Row="1" XAlign="Center" />
-          <Label x:Name="RedKeepsLabel" TextColor="Red" FontAttributes="Bold" YAlign="Center" XAlign="Center" Text="1" Grid.Column="2" Grid.Row="1" />
-          <Image Source="tower.png" Grid.Column="0" Grid.Row="2"></Image>
-          <Label Text="Towers" Grid.Column="1" Grid.Row="2" YAlign="Center" XAlign="Center" />
-          <Label x:Name="RedTowersLabel" TextColor="Red" FontAttributes="Bold" YAlign="Center" XAlign="Center" Text="1" Grid.Column="2" Grid.Row="2" />
-          <Image Source="camp.png" Grid.Column="0" Grid.Row="3"></Image>
-          <Label Text="Camps" Grid.Column="1" Grid.Row="3" YAlign="Center" XAlign="Center" />
-          <Label x:Name="RedCampsLabel" TextColor="Red" FontAttributes="Bold" YAlign="Center" XAlign="Center" Text="1" Grid.Column="2" Grid.Row="3" />
+          <Image Source="keep.png" Grid.Column="0" Grid.Row="0">
+            <Image.GestureRecognizers>
+              <TapGestureRecognizer
+                      Tapped="RedKeep_Clicked"
+                      NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+          </Image>
+          <Label Text="Keeps" YAlign="Center" Grid.Column="1" Grid.Row="0" XAlign="Center">
+            <Label.GestureRecognizers>
+              <TapGestureRecognizer
+                      Tapped="RedKeep_Clicked"
+                      NumberOfTapsRequired="1" />
+            </Label.GestureRecognizers>
+          </Label>
+          <Label x:Name="RedKeepsLabel" TextColor="Red" FontAttributes="Bold" XAlign="Center" YAlign="Center" Text="1" Grid.Column="2" Grid.Row="0">
+            <Label.GestureRecognizers>
+              <TapGestureRecognizer
+                      Tapped="RedKeep_Clicked"
+                      NumberOfTapsRequired="1" />
+            </Label.GestureRecognizers>
+          </Label>
         </Grid>
+      <StackLayout Orientation="Vertical" x:Name="RedKeepsDetail" IsVisible="false">
+        <Grid x:Name="RedKeepsGrid"></Grid>
+      </StackLayout>
+      <Grid>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="80"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+          </Grid.ColumnDefinitions>
+          <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+          </Grid.RowDefinitions>
+          <Image Source="tower.png" Grid.Column="0" Grid.Row="0">
+            <Image.GestureRecognizers>
+              <TapGestureRecognizer
+                      Tapped="RedTower_Clicked"
+                      NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+          </Image>
+          <Label Text="Towers" YAlign="Center" Grid.Column="1" Grid.Row="0" XAlign="Center">
+            <Label.GestureRecognizers>
+              <TapGestureRecognizer
+                      Tapped="RedTower_Clicked"
+                      NumberOfTapsRequired="1" />
+            </Label.GestureRecognizers>
+          </Label>
+          <Label x:Name="RedTowersLabel" TextColor="Red" FontAttributes="Bold" XAlign="Center" YAlign="Center" Text="1" Grid.Column="2" Grid.Row="0">
+            <Label.GestureRecognizers>
+              <TapGestureRecognizer
+                      Tapped="RedTower_Clicked"
+                      NumberOfTapsRequired="1" />
+            </Label.GestureRecognizers>
+          </Label>
+        </Grid>
+      <StackLayout Orientation="Vertical" x:Name="RedTowersDetail" IsVisible="false">
+        <Grid x:Name="RedTowersGrid"></Grid>
+      </StackLayout>
+      <Grid>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="80"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+          </Grid.ColumnDefinitions>
+          <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+          </Grid.RowDefinitions>
+          <Image Source="camp.png" Grid.Column="0" Grid.Row="0">
+            <Image.GestureRecognizers>
+              <TapGestureRecognizer
+                      Tapped="Redcamp_Clicked"
+                      NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+          </Image>
+          <Label Text="Camps" YAlign="Center" Grid.Column="1" Grid.Row="0" XAlign="Center">
+            <Label.GestureRecognizers>
+              <TapGestureRecognizer
+                      Tapped="RedCamp_Clicked"
+                      NumberOfTapsRequired="1" />
+            </Label.GestureRecognizers>
+          </Label>
+          <Label x:Name="RedCampsLabel" TextColor="Red" FontAttributes="Bold" XAlign="Center" YAlign="Center" Text="1" Grid.Column="2" Grid.Row="0">
+            <Label.GestureRecognizers>
+              <TapGestureRecognizer
+                      Tapped="RedCamp_Clicked"
+                      NumberOfTapsRequired="1" />
+            </Label.GestureRecognizers>
+          </Label>
+        </Grid>
+      <StackLayout Orientation="Vertical" x:Name="RedCampsDetail" IsVisible="false">
+        <Grid x:Name="RedCampsGrid"></Grid>
+      </StackLayout>
       </StackLayout>
       <Button x:Name="GreenWorldButton" Text="Green World" TextColor="White" FontSize="20" BackgroundColor="Green" Clicked="GreenWorldButton_Clicked" />
       <Label x:Name="GreenWorldGlanceText" Text="POINTS: 0 KDR: 0" FontSize="16" XAlign="Center" />

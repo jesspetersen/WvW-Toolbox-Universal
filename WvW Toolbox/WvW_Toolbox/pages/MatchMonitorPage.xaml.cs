@@ -146,11 +146,50 @@ namespace WvW_Toolbox.pages
 
         }
 
+        public void RedCastleExpand()
+        {
+            if (!RedCastlesDetail.IsVisible)
+                RedCastlesDetail.IsVisible = true;
+            else
+                RedCastlesDetail.IsVisible = false;
+        }
+
+        public void RedKeepExpand()
+        {
+            if (!RedKeepsDetail.IsVisible)
+                RedKeepsDetail.IsVisible = true;
+            else
+                RedKeepsDetail.IsVisible = false;
+        }
+
+        public void RedTowerExpand()
+        {
+            if (!RedTowersDetail.IsVisible)
+                RedTowersDetail.IsVisible = true;
+            else
+                RedTowersDetail.IsVisible = false;
+        }
+
+        public void RedCampExpand()
+        {
+            if (!RedCampsDetail.IsVisible)
+                RedCampsDetail.IsVisible = true;
+            else
+                RedCampsDetail.IsVisible = false;
+        }
+
         private void RedWorldButton_Clicked(object sender, EventArgs e) { RedExpand(); }
 
         private void GreenWorldButton_Clicked(object sender, EventArgs e) { GreenExpand(); }
 
         private void BlueWorldButton_Clicked(object sender, EventArgs e) { BlueExpand(); }
 
+        private void RedCastle_Clicked(object sender, EventArgs e) { RedCastleExpand(); }
+
+        private void RedKeep_Clicked(object sender, EventArgs e) { RedKeepExpand(); }
+
+        private void RedTower_Clicked(object sender, EventArgs e) { RedTowerExpand(); }
+
+        private void RedCamp_Clicked(object sender, EventArgs e) { RedCampExpand(); }
     }
 }
