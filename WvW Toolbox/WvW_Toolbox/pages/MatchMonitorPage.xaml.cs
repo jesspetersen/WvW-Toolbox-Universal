@@ -178,6 +178,70 @@ namespace WvW_Toolbox.pages
                 RedCampsDetail.IsVisible = false;
         }
 
+        public void GreenCastleExpand()
+        {
+            if (!GreenCastlesDetail.IsVisible)
+                GreenCastlesDetail.IsVisible = true;
+            else
+                GreenCastlesDetail.IsVisible = false;
+        }
+
+        public void GreenKeepExpand()
+        {
+            if (!GreenKeepsDetail.IsVisible)
+                GreenKeepsDetail.IsVisible = true;
+            else
+                GreenKeepsDetail.IsVisible = false;
+        }
+
+        public void GreenTowerExpand()
+        {
+            if (!GreenTowersDetail.IsVisible)
+                GreenTowersDetail.IsVisible = true;
+            else
+                GreenTowersDetail.IsVisible = false;
+        }
+
+        public void GreenCampExpand()
+        {
+            if (!GreenCampsDetail.IsVisible)
+                GreenCampsDetail.IsVisible = true;
+            else
+                GreenCampsDetail.IsVisible = false;
+        }
+
+        public void BlueCastleExpand()
+        {
+            if (!BlueCastlesDetail.IsVisible)
+                BlueCastlesDetail.IsVisible = true;
+            else
+                BlueCastlesDetail.IsVisible = false;
+        }
+
+        public void BlueKeepExpand()
+        {
+            if (!BlueKeepsDetail.IsVisible)
+                BlueKeepsDetail.IsVisible = true;
+            else
+                BlueKeepsDetail.IsVisible = false;
+        }
+
+        public void BlueTowerExpand()
+        {
+            if (!BlueTowersDetail.IsVisible)
+                BlueTowersDetail.IsVisible = true;
+            else
+                BlueTowersDetail.IsVisible = false;
+        }
+
+        public void BlueCampExpand()
+        {
+            if (!BlueCampsDetail.IsVisible)
+                BlueCampsDetail.IsVisible = true;
+            else
+                BlueCampsDetail.IsVisible = false;
+        }
+
         private void RedWorldButton_Clicked(object sender, EventArgs e) { RedExpand(); }
 
         private void GreenWorldButton_Clicked(object sender, EventArgs e) { GreenExpand(); }
@@ -191,5 +255,21 @@ namespace WvW_Toolbox.pages
         private void RedTower_Clicked(object sender, EventArgs e) { RedTowerExpand(); }
 
         private void RedCamp_Clicked(object sender, EventArgs e) { RedCampExpand(); }
+
+        private void GreenCastle_Clicked(object sender, EventArgs e) { GreenCastleExpand(); }
+
+        private void GreenKeep_Clicked(object sender, EventArgs e) { GreenKeepExpand(); }
+
+        private void GreenTower_Clicked(object sender, EventArgs e) { GreenTowerExpand(); }
+
+        private void GreenCamp_Clicked(object sender, EventArgs e) { GreenCampExpand(); }
+
+        private void BlueCastle_Clicked(object sender, EventArgs e) { BlueCastleExpand(); }
+
+        private void BlueKeep_Clicked(object sender, EventArgs e) { BlueKeepExpand(); }
+
+        private void BlueTower_Clicked(object sender, EventArgs e) { BlueTowerExpand(); }
+
+        private void BlueCamp_Clicked(object sender, EventArgs e) { BlueCampExpand(); }
     }
 }
