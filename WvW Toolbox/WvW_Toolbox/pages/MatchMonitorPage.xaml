@@ -26,7 +26,7 @@
                       NumberOfTapsRequired="1" />
             </Image.GestureRecognizers>
           </Image>
-          <Label Text="Castles" YAlign="Center" Grid.Column="1" Grid.Row="0" XAlign="Center">
+          <Label Text="Castles" FontAttributes="Bold" YAlign="Center" Grid.Column="1" Grid.Row="0" XAlign="Center">
             <Label.GestureRecognizers>
               <TapGestureRecognizer
                       Tapped="RedCastle_Clicked"
@@ -60,7 +60,7 @@
                       NumberOfTapsRequired="1" />
             </Image.GestureRecognizers>
           </Image>
-          <Label Text="Keeps" YAlign="Center" Grid.Column="1" Grid.Row="0" XAlign="Center">
+          <Label Text="Keeps" FontAttributes="Bold" YAlign="Center" Grid.Column="1" Grid.Row="0" XAlign="Center">
             <Label.GestureRecognizers>
               <TapGestureRecognizer
                       Tapped="RedKeep_Clicked"
@@ -95,7 +95,7 @@
                       NumberOfTapsRequired="1" />
             </Image.GestureRecognizers>
           </Image>
-          <Label Text="Towers" YAlign="Center" Grid.Column="1" Grid.Row="0" XAlign="Center">
+          <Label Text="Towers" FontAttributes="Bold" YAlign="Center" Grid.Column="1" Grid.Row="0" XAlign="Center">
             <Label.GestureRecognizers>
               <TapGestureRecognizer
                       Tapped="RedTower_Clicked"
@@ -129,7 +129,7 @@
                       NumberOfTapsRequired="1" />
             </Image.GestureRecognizers>
           </Image>
-          <Label Text="Camps" YAlign="Center" Grid.Column="1" Grid.Row="0" XAlign="Center">
+          <Label Text="Camps" FontAttributes="Bold" YAlign="Center" Grid.Column="1" Grid.Row="0" XAlign="Center">
             <Label.GestureRecognizers>
               <TapGestureRecognizer
                       Tapped="RedCamp_Clicked"
@@ -168,7 +168,7 @@
                       NumberOfTapsRequired="1" />
             </Image.GestureRecognizers>
           </Image>
-          <Label Text="Castles" YAlign="Center" Grid.Column="1" Grid.Row="0" XAlign="Center">
+          <Label Text="Castles" FontAttributes="Bold" YAlign="Center" Grid.Column="1" Grid.Row="0" XAlign="Center">
             <Label.GestureRecognizers>
               <TapGestureRecognizer
                       Tapped="GreenCastle_Clicked"
@@ -202,7 +202,7 @@
                       NumberOfTapsRequired="1" />
             </Image.GestureRecognizers>
           </Image>
-          <Label Text="Keeps" YAlign="Center" Grid.Column="1" Grid.Row="0" XAlign="Center">
+          <Label Text="Keeps" FontAttributes="Bold" YAlign="Center" Grid.Column="1" Grid.Row="0" XAlign="Center">
             <Label.GestureRecognizers>
               <TapGestureRecognizer
                       Tapped="GreenKeep_Clicked"
@@ -236,7 +236,7 @@
                       NumberOfTapsRequired="1" />
             </Image.GestureRecognizers>
           </Image>
-          <Label Text="Towers" YAlign="Center" Grid.Column="1" Grid.Row="0" XAlign="Center">
+          <Label Text="Towers" FontAttributes="Bold" YAlign="Center" Grid.Column="1" Grid.Row="0" XAlign="Center">
             <Label.GestureRecognizers>
               <TapGestureRecognizer
                       Tapped="GreenTower_Clicked"
@@ -270,7 +270,7 @@
                       NumberOfTapsRequired="1" />
             </Image.GestureRecognizers>
           </Image>
-          <Label Text="Camps" YAlign="Center" Grid.Column="1" Grid.Row="0" XAlign="Center">
+          <Label Text="Camps" FontAttributes="Bold" YAlign="Center" Grid.Column="1" Grid.Row="0" XAlign="Center">
             <Label.GestureRecognizers>
               <TapGestureRecognizer
                       Tapped="GreenCamp_Clicked"
@@ -309,7 +309,7 @@
                       NumberOfTapsRequired="1" />
             </Image.GestureRecognizers>
           </Image>
-          <Label Text="Castles" YAlign="Center" Grid.Column="1" Grid.Row="0" XAlign="Center">
+          <Label Text="Castles" FontAttributes="Bold" YAlign="Center" Grid.Column="1" Grid.Row="0" XAlign="Center">
             <Label.GestureRecognizers>
               <TapGestureRecognizer
                       Tapped="BlueCastle_Clicked"
@@ -343,7 +343,7 @@
                       NumberOfTapsRequired="1" />
             </Image.GestureRecognizers>
           </Image>
-          <Label Text="Keeps" YAlign="Center" Grid.Column="1" Grid.Row="0" XAlign="Center">
+          <Label Text="Keeps" FontAttributes="Bold" YAlign="Center" Grid.Column="1" Grid.Row="0" XAlign="Center">
             <Label.GestureRecognizers>
               <TapGestureRecognizer
                       Tapped="BlueKeep_Clicked"
@@ -377,7 +377,7 @@
                       NumberOfTapsRequired="1" />
             </Image.GestureRecognizers>
           </Image>
-          <Label Text="Towers" YAlign="Center" Grid.Column="1" Grid.Row="0" XAlign="Center">
+          <Label Text="Towers" FontAttributes="Bold" YAlign="Center" Grid.Column="1" Grid.Row="0" XAlign="Center">
             <Label.GestureRecognizers>
               <TapGestureRecognizer
                       Tapped="BlueTower_Clicked"
@@ -411,7 +411,7 @@
                       NumberOfTapsRequired="1" />
             </Image.GestureRecognizers>
           </Image>
-          <Label Text="Camps" YAlign="Center" Grid.Column="1" Grid.Row="0" XAlign="Center">
+          <Label Text="Camps" FontAttributes="Bold" YAlign="Center" Grid.Column="1" Grid.Row="0" XAlign="Center">
             <Label.GestureRecognizers>
               <TapGestureRecognizer
                       Tapped="BlueCamp_Clicked"

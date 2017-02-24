@@ -109,31 +109,31 @@ namespace WvW_Toolbox.pages
             int BlueCampsIterator = 0;
 
             for (int i = 0; i < objectiveCount[0]; i++)
-                RedCastlesGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(50) });
+                RedCastlesGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(30) });
             for (int i = 0; i < objectiveCount[1]; i++)
-                RedKeepsGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(50) });
+                RedKeepsGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(30) });
             for (int i = 0; i < objectiveCount[2]; i++)
-                RedTowersGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(50) });
+                RedTowersGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(30) });
             for (int i = 0; i < objectiveCount[3]; i++)
-                RedCampsGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(50) });
+                RedCampsGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(30) });
 
             for (int i = 0; i < objectiveCount[4]; i++)
-                GreenCastlesGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(50) });
+                GreenCastlesGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(30) });
             for (int i = 0; i < objectiveCount[5]; i++)
-                GreenKeepsGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(50) });
+                GreenKeepsGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(30) });
             for (int i = 0; i < objectiveCount[6]; i++)
-                GreenTowersGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(50) });
+                GreenTowersGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(30) });
             for (int i = 0; i < objectiveCount[7]; i++)
-                GreenCampsGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(50) });
+                GreenCampsGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(30) });
 
             for (int i = 0; i < objectiveCount[8]; i++)
-                BlueCastlesGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(50) });
+                BlueCastlesGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(30) });
             for (int i = 0; i < objectiveCount[9]; i++)
-                BlueKeepsGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(50) });
+                BlueKeepsGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(30) });
             for (int i = 0; i < objectiveCount[10]; i++)
-                BlueTowersGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(50) });
+                BlueTowersGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(30) });
             for (int i = 0; i < objectiveCount[11]; i++)
-                BlueCampsGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(50) });
+                BlueCampsGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(30) });
 
             //This line is the problem!!!
             utilities.ObjectiveSorter.SortObjectivesByMap();

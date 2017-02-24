@@ -65,10 +65,10 @@ namespace WvW_Toolbox.utilities
 
         public static void SortObjectivesByMap()
         {
-            //List<objects.Objective> redHome = new List<objects.Objective>();
-            //List<objects.Objective> greenHome = new List<objects.Objective>();
-            //List<objects.Objective> blueHome = new List<objects.Objective>();
-            //List<objects.Objective> EBG = new List<objects.Objective>();
+            List<objects.Objective> redHome = new List<objects.Objective>();
+            List<objects.Objective> greenHome = new List<objects.Objective>();
+            List<objects.Objective> blueHome = new List<objects.Objective>();
+            List<objects.Objective> EBG = new List<objects.Objective>();
 
             foreach (JsonObjective j in JsonConvert.DeserializeObject<List<JsonObjective>>(Properties.Resources.AllObjectivesJson))
             {
@@ -78,25 +78,25 @@ namespace WvW_Toolbox.utilities
 
                     if (j.mapID == 1099 || j.mapID == 94)
                     {
-                        //redHome.Add(g);
+                        redHome.Add(g);
                         g.map = "Red BL";
                         g.mapColour = "#ff0000";
                     }
                     else if (j.mapID == 1143 || j.mapID == 96)
                     {
-                        //blueHome.Add(g);
+                        blueHome.Add(g);
                         g.map = "Blue BL";
                         g.mapColour = "#0000ff";
                     }
                     else if (j.mapID == 1102 || j.mapID == 95)
                     {
-                        //greenHome.Add(g);
+                        greenHome.Add(g);
                         g.map = "Green BL";
                         g.mapColour = "#008000";
                     }
                     else if (j.mapID == 38)
                     {
-                        //EBG.Add(g);
+                        EBG.Add(g);
                         g.map = "EBG";
                         g.mapColour = "#565656";
                     }
@@ -104,15 +104,13 @@ namespace WvW_Toolbox.utilities
                 catch { }
             }
 
-            //List<List<objects.Objective>> mapsOfObjectives = new List<List<objects.Objective>>();
-            //mapsOfObjectives.Add(redHome);
-            //mapsOfObjectives.Add(greenHome);
-            //mapsOfObjectives.Add(blueHome);
-            //mapsOfObjectives.Add(EBG);
+            List<List<objects.Objective>> mapsOfObjectives = new List<List<objects.Objective>>();
+            mapsOfObjectives.Add(redHome);
+            mapsOfObjectives.Add(greenHome);
+            mapsOfObjectives.Add(blueHome);
+            mapsOfObjectives.Add(EBG);
 
-            //NameObjectives(mapsOfObjectives);
-
-            //return mapsOfObjectives;
+            NameObjectives(mapsOfObjectives);
         }
 
         public static void NameObjectives(List<List<objects.Objective>> maps)
@@ -121,7 +119,7 @@ namespace WvW_Toolbox.utilities
             foreach (List<objects.Objective> objectives in maps)
             {
                 //ebg
-                if (objectives.First().id.Contains("38"))
+                if (objectives.First().id.StartsWith("38"))
                 {
                     //Set objective names
                     foreach (objects.Objective o in objectives)
@@ -195,130 +193,130 @@ namespace WvW_Toolbox.utilities
                 }
 
                 //if is a DBL
-                if (objectives.First().id.Contains("1099") || objectives.First().id.Contains("1143") || objectives.First().id.Contains("1102"))
+                if (objectives.First().id.StartsWith("1099") || objectives.First().id.StartsWith("1143") || objectives.First().id.StartsWith("1102"))
                 {
 
                     //Set BL name
                     foreach (objects.Objective o in objectives)
                     {
                         //red dbl
-                        if (o.id.Contains("1099"))
+                        if (o.id.StartsWith("1099"))
                             o.name = "RBL-";
 
                         //blue dbl
-                        if (o.id.Contains("1143"))
+                        if (o.id.StartsWith("1143"))
                             o.name = "BBL-";
 
                         //green dbl
-                        if (o.id.Contains("1102"))
+                        if (o.id.StartsWith("1102"))
                             o.name = "GBL-";
                     }
 
                     //Set objective identifier
                     foreach (objects.Objective o in objectives)
                     {
-                        if (o.id == "99")
+                        if (o.id.EndsWith("99"))
                             o.name += "NC";
 
-                        if (o.id == "100")
+                        if (o.id.EndsWith("100"))
                             o.name += "SEC";
 
-                        if (o.id == "101")
+                        if (o.id.EndsWith("101"))
                             o.name += "SWC";
 
-                        if (o.id == "102")
+                        if (o.id.EndsWith("102"))
                             o.name += "NWT";
 
-                        if (o.id == "104")
+                        if (o.id.EndsWith("104"))
                             o.name += "NET";
 
-                        if (o.id == "105")
+                        if (o.id.EndsWith("105"))
                             o.name += "SET";
 
-                        if (o.id == "106")
+                        if (o.id.EndsWith("106"))
                             o.name += "FIRE";
 
-                        if (o.id == "109")
+                        if (o.id.EndsWith("109"))
                             o.name += "NEC";
 
-                        if (o.id == "110")
+                        if (o.id.EndsWith("110"))
                             o.name += "SWT";
 
-                        if (o.id == "113")
+                        if (o.id.EndsWith("113"))
                             o.name += "GARRI";
 
-                        if (o.id == "114")
+                        if (o.id.EndsWith("114"))
                             o.name += "AIR";
 
-                        if (o.id == "115")
+                        if (o.id.EndsWith("115"))
                             o.name += "NWC";
 
-                        if (o.id == "116")
+                        if (o.id.EndsWith("116"))
                             o.name += "SC";
                     }
 
                 }
 
                 //If this is an ABL
-                if (objectives.First().id.Contains("94") || objectives.First().id.Contains("96") || objectives.First().id.Contains("95"))
+                if (objectives.First().id.StartsWith("94") || objectives.First().id.StartsWith("96") || objectives.First().id.StartsWith("95"))
                 {
 
                     //Set BL name
                     foreach (objects.Objective o in objectives)
                     {
                         //red dbl
-                        if (o.id.Contains("94"))
+                        if (o.id.StartsWith("94"))
                             o.name = "RBL-";
 
                         //blue dbl
-                        if (o.id.Contains("96"))
+                        if (o.id.StartsWith("96"))
                             o.name = "BBL-";
 
                         //green dbl
-                        if (o.id.Contains("95"))
+                        if (o.id.StartsWith("95"))
                             o.name = "GBL-";
                     }
 
                     //Set objective identifier
                     foreach (objects.Objective o in objectives)
                     {
-                        if (o.id == "35")
+                        if (o.id.EndsWith("35"))
                             o.name += "SWT";
 
-                        if (o.id == "32")
+                        if (o.id.EndsWith("32"))
                             o.name += "HILLS";
 
-                        if (o.id == "33")
+                        if (o.id.EndsWith("33"))
                             o.name += "BAY";
 
-                        if (o.id == "38")
+                        if (o.id.EndsWith("38"))
                             o.name += "NWT";
 
-                        if (o.id == "39")
+                        if (o.id.EndsWith("39"))
                             o.name += "NC";
 
-                        if (o.id == "37")
+                        if (o.id.EndsWith("37"))
                             o.name += "GARRI";
 
-                        if (o.id == "53")
+                        if (o.id.EndsWith("53"))
                             o.name += "SWC";
 
-                        if (o.id == "52")
+                        if (o.id.EndsWith("52"))
                             o.name += "NWC";
 
-                        if (o.id == "51")
+                        if (o.id.EndsWith("51"))
                             o.name += "NEC";
 
-                        if (o.id == "34")
+                        if (o.id.EndsWith("34"))
                             o.name += "SC";
 
-                        if (o.id == "36")
+                        if (o.id.EndsWith("36"))
                             o.name += "SET";
 
-                        if (o.id == "50")
+                        if (o.id.EndsWith("50"))
                             o.name += "SEC";
 
-                        if (o.id == "40")
+                        if (o.id.EndsWith("40"))
                             o.name += "NET";
                     }
                 }
