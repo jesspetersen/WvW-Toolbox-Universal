@@ -63,37 +63,56 @@ namespace WvW_Toolbox.utilities
         //Method to search keeps that belong to each server
         //Return multidimensional array or list of lists
 
-        public static List<List<objects.Objective>> SortObjectivesByMap()
+        public static void SortObjectivesByMap()
         {
-            List<objects.Objective> redHome = new List<objects.Objective>();
-            List<objects.Objective> greenHome = new List<objects.Objective>();
-            List<objects.Objective> blueHome = new List<objects.Objective>();
-            List<objects.Objective> EBG = new List<objects.Objective>();
+            //List<objects.Objective> redHome = new List<objects.Objective>();
+            //List<objects.Objective> greenHome = new List<objects.Objective>();
+            //List<objects.Objective> blueHome = new List<objects.Objective>();
+            //List<objects.Objective> EBG = new List<objects.Objective>();
 
             foreach (JsonObjective j in JsonConvert.DeserializeObject<List<JsonObjective>>(Properties.Resources.AllObjectivesJson))
             {
-                objects.Objective g = Global.allObjectives.Single(x => Convert.ToInt32(x.id) == Convert.ToInt32(j.id));
-                g.name = j.name;
+                try
+                {
+                    objects.Objective g = Global.allObjectives.Single(x => x.id == j.id);
 
-                if (j.mapType == "RedHome")
-                    redHome.Add(g);
-                else if (j.mapType == "BlueHome")
-                    blueHome.Add(g);
-                else if (j.mapType == "GreenHome")
-                    greenHome.Add(g);
-                else if (j.mapType == "Center")
-                    EBG.Add(g);
+                    if (j.mapID == 1099 || j.mapID == 94)
+                    {
+                        //redHome.Add(g);
+                        g.map = "Red BL";
+                        g.mapColour = "#ff0000";
+                    }
+                    else if (j.mapID == 1143 || j.mapID == 96)
+                    {
+                        //blueHome.Add(g);
+                        g.map = "Blue BL";
+                        g.mapColour = "#0000ff";
+                    }
+                    else if (j.mapID == 1102 || j.mapID == 95)
+                    {
+                        //greenHome.Add(g);
+                        g.map = "Green BL";
+                        g.mapColour = "#008000";
+                    }
+                    else if (j.mapID == 38)
+                    {
+                        //EBG.Add(g);
+                        g.map = "EBG";
+                        g.mapColour = "#565656";
+                    }
+                }
+                catch { }
             }
 
-            List<List<objects.Objective>> mapsOfObjectives = new List<List<objects.Objective>>();
-            mapsOfObjectives.Add(redHome);
-            mapsOfObjectives.Add(greenHome);
-            mapsOfObjectives.Add(blueHome);
-            mapsOfObjectives.Add(EBG);
+            //List<List<objects.Objective>> mapsOfObjectives = new List<List<objects.Objective>>();
+            //mapsOfObjectives.Add(redHome);
+            //mapsOfObjectives.Add(greenHome);
+            //mapsOfObjectives.Add(blueHome);
+            //mapsOfObjectives.Add(EBG);
 
-            NameObjectives(mapsOfObjectives);
+            //NameObjectives(mapsOfObjectives);
 
-            return mapsOfObjectives;
+            //return mapsOfObjectives;
         }
 
         public static void NameObjectives(List<List<objects.Objective>> maps)
@@ -326,7 +345,7 @@ namespace WvW_Toolbox.utilities
             public string mapType { get; set; }
 
             [JsonProperty("map_id")]
-            public string mapID { get; set; }
+            public int mapID { get; set; }
 
             [JsonProperty("coord")]
             public string[] coord { get; set; }

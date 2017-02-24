@@ -12,6 +12,8 @@ namespace WvW_Toolbox.objects
         public string type { get; set; }
         public string owner { get; set; }
         public string name { get; set; }
+        public string map { get; set; }
+        public string mapColour { get; set; }
 
         public Objective(string id, string type, string owner)
         {
