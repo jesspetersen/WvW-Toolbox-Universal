@@ -42,7 +42,7 @@
           </Label>
         </Grid>
       <StackLayout Orientation="Vertical" x:Name="RedCastlesDetail" IsVisible="false">
-        <Grid x:Name="RedCastlesGrid"><Grid.ColumnDefinitions><ColumnDefinition Width="80"></ColumnDefinition><ColumnDefinition></ColumnDefinition></Grid.ColumnDefinitions></Grid>
+        <Grid x:Name="RedCastlesGrid"></Grid>
       </StackLayout>
         <Grid>
           <Grid.ColumnDefinitions>
@@ -76,8 +76,7 @@
           </Label>
         </Grid>
         <StackLayout Orientation="Vertical" x:Name="RedKeepsDetail" IsVisible="false">
-          <Grid x:Name="RedKeepsGrid"><Grid.ColumnDefinitions><ColumnDefinition Width="80"></ColumnDefinition><ColumnDefinition></ColumnDefinition></Grid.ColumnDefinitions>
-          </Grid>
+          <Grid x:Name="RedKeepsGrid"></Grid>
         </StackLayout>
         <Grid>
           <Grid.ColumnDefinitions>
@@ -111,7 +110,7 @@
           </Label>
         </Grid>
         <StackLayout Orientation="Vertical" x:Name="RedTowersDetail" IsVisible="false">
-          <Grid x:Name="RedTowersGrid"><Grid.ColumnDefinitions><ColumnDefinition Width="80"></ColumnDefinition><ColumnDefinition></ColumnDefinition></Grid.ColumnDefinitions></Grid>
+          <Grid x:Name="RedTowersGrid"></Grid>
         </StackLayout>
         <Grid>
           <Grid.ColumnDefinitions>
@@ -145,7 +144,7 @@
           </Label>
         </Grid>
         <StackLayout Orientation="Vertical" x:Name="RedCampsDetail" IsVisible="false">
-          <Grid x:Name="RedCampsGrid"><Grid.ColumnDefinitions><ColumnDefinition Width="80"></ColumnDefinition><ColumnDefinition></ColumnDefinition></Grid.ColumnDefinitions></Grid>
+          <Grid x:Name="RedCampsGrid"></Grid>
         </StackLayout>
       </StackLayout>
       <Button x:Name="GreenWorldButton" Text="Green World" TextColor="White" FontSize="20" BackgroundColor="Green" Clicked="GreenWorldButton_Clicked" />
@@ -184,7 +183,7 @@
           </Label>
         </Grid>
         <StackLayout Orientation="Vertical" x:Name="GreenCastlesDetail" IsVisible="false">
-          <Grid x:Name="GreenCastlesGrid"><Grid.ColumnDefinitions><ColumnDefinition Width="80"></ColumnDefinition><ColumnDefinition></ColumnDefinition></Grid.ColumnDefinitions></Grid>
+          <Grid x:Name="GreenCastlesGrid"></Grid>
         </StackLayout>
         <Grid>
           <Grid.ColumnDefinitions>
@@ -218,7 +217,7 @@
           </Label>
         </Grid>
         <StackLayout Orientation="Vertical" x:Name="GreenKeepsDetail" IsVisible="false">
-          <Grid x:Name="GreenKeepsGrid"><Grid.ColumnDefinitions><ColumnDefinition Width="80"></ColumnDefinition><ColumnDefinition></ColumnDefinition></Grid.ColumnDefinitions></Grid>
+          <Grid x:Name="GreenKeepsGrid"></Grid>
         </StackLayout>
         <Grid>
           <Grid.ColumnDefinitions>
@@ -252,7 +251,7 @@
           </Label>
         </Grid>
         <StackLayout Orientation="Vertical" x:Name="GreenTowersDetail" IsVisible="false">
-          <Grid x:Name="GreenTowersGrid"><Grid.ColumnDefinitions><ColumnDefinition Width="80"></ColumnDefinition><ColumnDefinition></ColumnDefinition></Grid.ColumnDefinitions></Grid>
+          <Grid x:Name="GreenTowersGrid"></Grid>
         </StackLayout>
         <Grid>
           <Grid.ColumnDefinitions>
@@ -286,7 +285,7 @@
           </Label>
         </Grid>
         <StackLayout Orientation="Vertical" x:Name="GreenCampsDetail" IsVisible="false">
-          <Grid x:Name="GreenCampsGrid"><Grid.ColumnDefinitions><ColumnDefinition Width="80"></ColumnDefinition><ColumnDefinition></ColumnDefinition></Grid.ColumnDefinitions></Grid>
+          <Grid x:Name="GreenCampsGrid"></Grid>
         </StackLayout>
       </StackLayout>
       <Button x:Name="BlueWorldButton" Text="Blue World" TextColor="White" FontSize="20" BackgroundColor="Blue" Clicked="BlueWorldButton_Clicked" />
@@ -325,7 +324,7 @@
           </Label>
         </Grid>
         <StackLayout Orientation="Vertical" x:Name="BlueCastlesDetail" IsVisible="false">
-          <Grid x:Name="BlueCastlesGrid"><Grid.ColumnDefinitions><ColumnDefinition Width="80"></ColumnDefinition><ColumnDefinition></ColumnDefinition></Grid.ColumnDefinitions></Grid>
+          <Grid x:Name="BlueCastlesGrid"></Grid>
         </StackLayout>
         <Grid>
           <Grid.ColumnDefinitions>
@@ -359,7 +358,7 @@
           </Label>
         </Grid>
         <StackLayout Orientation="Vertical" x:Name="BlueKeepsDetail" IsVisible="false">
-          <Grid x:Name="BlueKeepsGrid"><Grid.ColumnDefinitions><ColumnDefinition Width="80"></ColumnDefinition><ColumnDefinition></ColumnDefinition></Grid.ColumnDefinitions></Grid>
+          <Grid x:Name="BlueKeepsGrid"></Grid>
         </StackLayout>
         <Grid>
           <Grid.ColumnDefinitions>
@@ -393,7 +392,7 @@
           </Label>
         </Grid>
         <StackLayout Orientation="Vertical" x:Name="BlueTowersDetail" IsVisible="false">
-          <Grid x:Name="BlueTowersGrid"><Grid.ColumnDefinitions><ColumnDefinition Width="80"></ColumnDefinition><ColumnDefinition></ColumnDefinition></Grid.ColumnDefinitions></Grid>
+          <Grid x:Name="BlueTowersGrid"></Grid>
         </StackLayout>
         <Grid>
           <Grid.ColumnDefinitions>
@@ -427,7 +426,7 @@
           </Label>
         </Grid>
         <StackLayout Orientation="Vertical" x:Name="BlueCampsDetail" IsVisible="false">
-          <Grid x:Name="BlueCampsGrid"><Grid.ColumnDefinitions><ColumnDefinition Width="80"></ColumnDefinition><ColumnDefinition></ColumnDefinition></Grid.ColumnDefinitions></Grid>
+          <Grid x:Name="BlueCampsGrid"></Grid>
         </StackLayout>
       </StackLayout>
     <Button x:Name="ReloadButton" Text="RELOAD" TextColor="White" FontSize="20" BackgroundColor="Yellow" Clicked="Reload_Clicked" />

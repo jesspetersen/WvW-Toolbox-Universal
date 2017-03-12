@@ -20,6 +20,10 @@ namespace WvW_Toolbox.pages
 
         public void Reload_Clicked(object sender, EventArgs e)
         {
+            if (RedCampsGrid.RowDefinitions.Count > 0 || GreenCampsGrid.RowDefinitions.Count > 0 || BlueCampsGrid.RowDefinitions.Count > 0)
+            {
+                ResetGrids(new Grid[] { RedCampsGrid, RedTowersGrid, RedKeepsGrid, RedCastlesGrid, GreenCampsGrid, GreenTowersGrid, GreenKeepsGrid, GreenCastlesGrid, BlueCampsGrid, BlueTowersGrid, BlueKeepsGrid, BlueCastlesGrid});
+            }
             FillData(Global.match);
         }
 
@@ -135,7 +139,8 @@ namespace WvW_Toolbox.pages
             for (int i = 0; i < objectiveCount[11]; i++)
                 BlueCampsGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(30) });
 
-            //This line is the problem!!!
+            DefineGridColumns(new Grid[] { RedCampsGrid, RedTowersGrid, RedKeepsGrid, RedCastlesGrid, GreenCampsGrid, GreenTowersGrid, GreenKeepsGrid, GreenCastlesGrid, BlueCampsGrid, BlueTowersGrid, BlueKeepsGrid, BlueCastlesGrid });
+
             utilities.ObjectiveSorter.SortObjectivesByMap();
 
             foreach (objects.Objective o in Global.allObjectives)
@@ -223,6 +228,32 @@ namespace WvW_Toolbox.pages
                         BlueCampsIterator++;
                     }
                 }
+            }
+        }
+
+        public void ResetGrids(Grid[] gl)
+        {
+            foreach (Grid g in gl)
+            {
+                g.Children.Clear();
+                while (g.RowDefinitions.Count > 0)
+                {
+                    g.RowDefinitions.RemoveAt(g.RowDefinitions.Count - 1);
+                }
+                while (g.ColumnDefinitions.Count > 0)
+                {
+                    g.ColumnDefinitions.RemoveAt(g.ColumnDefinitions.Count - 1);
+                }
+            }
+            
+        }
+
+        public void DefineGridColumns(Grid[] gl)
+        {
+            foreach (Grid g in gl)
+            {
+                g.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(80) });
+                g.ColumnDefinitions.Add(new ColumnDefinition { });
             }
         }
 
