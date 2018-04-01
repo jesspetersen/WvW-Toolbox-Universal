@@ -29,9 +29,9 @@ namespace WvW_Toolbox.utilities
                     string[] blueWorlds = match.all_worlds.blue.Select(i => i.ToString()).ToArray();
                     string[] greenWorlds = match.all_worlds.green.Select(i => i.ToString()).ToArray();
 
-                    objects.Team redTeam = new objects.Team(""+match.worlds.red, redWorlds, ""+match.scores.red, ""+match.kills.red, ""+match.deaths.red);
-                    objects.Team blueTeam = new objects.Team(""+match.worlds.blue, blueWorlds, ""+match.scores.blue, ""+match.kills.blue, ""+match.deaths.blue);
-                    objects.Team greenTeam = new objects.Team(""+match.worlds.green, greenWorlds, ""+match.scores.green, ""+match.kills.green, ""+match.deaths.green);
+                    objects.Team redTeam = new objects.Team(""+match.worlds.red, redWorlds, ""+match.points.red, ""+match.kills.red, ""+match.deaths.red);
+                    objects.Team blueTeam = new objects.Team(""+match.worlds.blue, blueWorlds, ""+match.points.blue, ""+match.kills.blue, ""+match.deaths.blue);
+                    objects.Team greenTeam = new objects.Team(""+match.worlds.green, greenWorlds, ""+match.points.green, ""+match.kills.green, ""+match.deaths.green);
 
                     Global.match = new objects.Match(redTeam, blueTeam, greenTeam);
 
@@ -77,6 +77,12 @@ namespace WvW_Toolbox.utilities
 
         [JsonProperty("kills")]
         public JsonKills kills { get; set; }
+
+        [JsonProperty("victory_points")]
+        public JsonVictoryPoints points { get; set; }
+
+        [JsonProperty("skirmishes")]
+        public JsonSkirmishes[] skirmishes { get; set; }
 
         [JsonProperty("maps")]
         public JsonMaps[] maps { get; set; }
@@ -151,7 +157,7 @@ namespace WvW_Toolbox.utilities
         public string type { get; set; }
 
         [JsonProperty("scores")]
-        public JsonScores scores { get; set; }
+        public JsonSkirmishScores scores { get; set; }
 
         [JsonProperty("bonuses")]
         public JsonBonuses[] bonuses { get; set; }
@@ -194,5 +200,50 @@ namespace WvW_Toolbox.utilities
 
         [JsonProperty("claimed_at")]
         public string claimed_at { get; set; }
+    }
+
+    public class JsonVictoryPoints
+    {
+        [JsonProperty("red")]
+        public double red { get; set; }
+
+        [JsonProperty("blue")]
+        public double blue { get; set; }
+
+        [JsonProperty("green")]
+        public double green { get; set; }
+    }
+
+    public class JsonSkirmishes
+    {
+        [JsonProperty("id")]
+        public int id { get; set; }
+
+        [JsonProperty("scores")]
+        public JsonSkirmishScores scores { get; set; }
+
+        [JsonProperty("map_scores")]
+        public JsonSkirmishMapScores[] mapScores { get; set; }
+    }
+
+    public class JsonSkirmishScores
+    {
+        [JsonProperty("red")]
+        public double red { get; set; }
+
+        [JsonProperty("blue")]
+        public double blue { get; set; }
+
+        [JsonProperty("green")]
+        public double green { get; set; }
+    }
+
+    public class JsonSkirmishMapScores
+    {
+        [JsonProperty("type")]
+        public string type { get; set; }
+
+        [JsonProperty("scores")]
+        public JsonSkirmishScores scores { get; set; }
     }
 }
